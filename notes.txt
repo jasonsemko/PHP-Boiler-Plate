@@ -1,0 +1,22 @@
+#### PAGE FORMATTING - ASSUMING LEFT ALIGN TO MIMIC FORMER PAGES ####
+
+#page-wrapper (100%)
+	<header>#third-party-procurement-header (height and background color to stretch across)
+			A - Will be divided into two sections
+				1. Top red line .header-container-top 
+				2. Third Party 	.header-container-btm 
+	
+	#page-content-container (width of page) 
+		#3PP-search
+			B - Search area, two versions
+				1. Home page (only page with different style of search) #3PP-home-search
+				2. Global (every where else) #3PP-search REAL HTML
+		#3PP-breadcrumbs
+			F - Breadcrumbs and share icons #3PP-breadcrumbs
+		#3PP-left-rail-main-content-container
+			C - Left rail #3PP-left-rail
+			D - Main content #3PP-main-content
+
+	<footer> #third-party-procurement-footer
+		.footer-container-top
+		.footer-container-btm

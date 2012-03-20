@@ -1,0 +1,64 @@
+/*** SIGMA THIRD PARTY PROCUREMENT ***/
+
+
+/* Header
+-----------------------------------------------------*/
+
+#third-party-procurement-header{
+	background: transparent url(../img/header/bg.png) repeat-x scroll 0 0;
+	height: 147px;
+
+}
+	#third-party-procurement-header .header-container-top{
+		background-image: url(../img/header/logo.png);
+		height: 35px;
+		position: relative;
+		width: 990px;
+
+	}
+		#third-party-procurement-header .header-container-top a.cart{
+			color: #FFF;
+			font-family: Arial;
+			font-size: 10px;
+			font-weight: bold;
+			padding-left: 20px;
+			position: absolute;
+			right: 0;
+			top: 13px;
+
+		}
+	#third-party-procurement-header .header-container-btm{
+		background-image: url(../img/header/3PP-logo.jpg);
+		height: 112px;
+		position: relative;
+		width: 990px;
+
+	}
+		#third-party-procurement-header .header-container-btm	a.third-party-procurement-logo{
+			height: 60px;
+			left: 0;
+			position: absolute;
+			top: 22px;
+			width: 300px;
+		}
+
+/* Footer
+-----------------------------------------------------*/
+
+#third-party-procurement-footer{
+	background: transparent url(../img/footer/bg.png) repeat-x scroll 0 0;
+	height: 591px;
+
+}
+	#third-party-procurement-footer .footer-container-top{
+		background-image: url(../img/footer/need-assistance.png);
+		height: 305px;
+		width: 990px;
+
+	}
+	#third-party-procurement-footer .footer-container-btm{
+		background-image: url(../img/footer/footer-links.png);
+		height: 286px;
+		width: 990px;
+
+	}

@@ -2,6 +2,8 @@
  *	Helper Classes (Global)
  */
 
+a{text-decoration: none;}
+a:hover{text-decoration:underline;}
 .noBorder {border: none !important;}
 .noMargin {margin: 0 !important;}
 .noPadding {padding: 0 !important;}
