@@ -11,7 +11,7 @@
 		<link href="css/global.css" rel="stylesheet">	
 		
 		<!-- Load modernizr first - all other scripts at bottom of page -->
-		<script src="js/libs/modernizr-2.0.6.min.js"></script>
+		
 	</head> 
 
 	<body class="homePage">
@@ -22,7 +22,7 @@
 
 
 		<!-- HUGE Scripts -->
-		<script defer src="js/plugins.js"></script>
-		<script defer src="js/global.js"></script>		
+		<script defer src="js/plugins/jquery-1.7.js"></script>
+		<script defer src="js/antibiotics.js"></script>
 	</body>
 </html>
