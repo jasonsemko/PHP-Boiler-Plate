@@ -11,6 +11,7 @@
 		<link href="css/base.css" rel="stylesheet">	
 		<link href="css/plugins/colorbox.css" rel="stylesheet">	
 		<link href="css/global.css" rel="stylesheet">			
+		<link href="css/SIGMA.css" rel="stylesheet">			
 		
 		<link href="css/index.css" rel="stylesheet">			
 	</head> 

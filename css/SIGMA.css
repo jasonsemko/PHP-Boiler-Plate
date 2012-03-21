@@ -1,0 +1,112 @@
+/* ========================== */
+/* = COPIED SIGMA CSS BELOW = */
+/* ========================== */
+
+
+/* ===================================== */
+/* = New CSS for redesign of left rail = */
+/* ===================================== */
+#third-party .remove-filter {
+	background: transparent url('../img/browse-filter/remove-filter-icon.png') no-repeat scroll left 0;
+	color: #665E58;
+	display: block;
+	height: 12px;
+	padding-bottom: 2px;
+	position: absolute;
+	right: 7px;
+	top: 3px;
+	width: 14px;
+
+}
+
+#third-party p.headline {
+	color: #403C36;
+	font: bold 18px Arial, Helvetica, sans-serif;
+	line-height: 18px !important;
+	margin-bottom: 10px;
+	text-transform: capitalize;
+
+}
+#third-party p.selectedFilters {
+	color: #403C36;
+	font: bold 12px Arial, Helvetica, sans-serif;
+	margin-bottom: 5px;
+}
+#third-party div.your-selections {
+	margin: 5px 0 20px;
+	padding: 5px 0;
+	width: 195px;
+
+}
+
+#third-party div.your-selections ul.list li {
+	background-color: #E6E6E6;
+	color: #1D5293;
+	font: bold 11px Arial, Helvetica, sans-serif;
+	margin: 2px 0;
+	padding: 4px 0px 4px 5px;
+	position: relative;
+	width: 190px;
+
+}
+#third-party div.your-selections ul.list .breadcrumbOriginalTextSearched{
+	font-weight: normal;
+}
+#third-party .WidgetBox div.RefinementDimensionText{
+  display:none;
+  font-weight:bold;
+  font-size:11px;
+  color:#1d5293;
+  padding-left:10px;
+  _height:auto;
+}
+#third-party .WidgetBox div.RefinementDimensionText input{
+  margin:0 2px 0 0;
+  display:inline-block;
+  *display:inline;
+  *zoom:1;
+  vertical-align:middle;
+  padding:2px 0;
+}
+#third-party .WidgetBox div.RefinementDimensionText div{
+  padding:5px 0;
+}
+#third-party .WidgetBox div.RefinementDimensionText span.RefineDimensionTextResultText{
+  line-height:12px;
+  display: inline-block;
+  width: 147px;
+  *width:140px;
+  vertical-align: middle;
+  padding:2px 0;
+}
+#third-party .WidgetBox div.RefinementDimensionText span.RefineDimensionTextResultCount{
+  color:#8c8784;
+  padding-left:2px;
+}
+#third-party .RefinementDimension{
+  padding:10px 0;
+  border-top:1px dotted #cacaca;
+}
+#third-party .RefinementDimensionHeader{
+  margin-bottom:8px;
+}
+#third-party .RefinementDimension span.results-sprite{
+  display:inline-block;
+  *display:inline;
+  *zoom:1;
+  margin-right:5px;
+  width:14px;
+  height:14px;
+  background-position: -88px -88px;
+  vertical-align:middle;
+}
+#third-party .RefinementDimension span.refinementDimensionHeaderText{
+  display:inline-block;
+  *display:inline;
+  *zoom:1;
+  cursor:pointer;
+  color: #403c36;
+	font: bold 11px Arial, Helvetica, sans-serif;
+  line-height:13px;
+  vertical-align:bottom;
+}
