@@ -27,3 +27,8 @@ remove
 use names rather than letters
 use body id, reset before base
 
+### TODO FOR MARCH 21 ###
+Print out all new VD
+Search dropdown
+All left rails #browse-filter
+Individual product module .product
