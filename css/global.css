@@ -50,6 +50,7 @@
 #third-party footer{
 	background: transparent url(../img/footer/bg.png) repeat-x scroll 0 0;
 	height: 591px;
+	margin-top: 80px;
 
 }
 	#third-party footer .top{
@@ -84,7 +85,7 @@
 	}
 	#overlay .inputs{
 		position: absolute;
-		right: 100px;
+		right: 96px;
 		top: 221px;
 		
 	}
@@ -92,14 +93,14 @@
 			border: 1px solid #cac9c7;
 			display: block;
 			font-weight: bold;
-			margin-bottom: 12px;
-			padding: 5px 0;
+			margin-bottom: 14px;
+			padding: 4px 0;
 			text-align: center;
 			width: 30px;
 			
 		}
 	#overlay a{
-		bottom: 90px;
+		bottom: 40px;
 		display: block;
 		height: 30px;
 		position: absolute;
@@ -184,3 +185,73 @@
 		}
 		#third-party .breadcrumbs a.store{left: 0; width: 105px;}
 		#third-party .breadcrumbs a.section{left: 107px; width: 82px;}
+		
+
+/* Product Module
+-----------------------------------------------------*/
+
+#third-party .product{
+	background-color: #eaeae8;
+	display: block;
+	height: 230px;
+	position: absolute;
+	text-align: center;
+	width: 240px;
+	
+}
+#third-party .product:hover{
+	background-color: #d3d3cc;
+}
+	#third-party .product img{
+		padding: 5px 0;
+		
+	}
+	#third-party .product p{
+		color: #333;
+		font: bold 12px Arial, sans-serif;
+		padding: 2px 0;
+		
+	}
+	#third-party .product a{
+		background-image: url('../img/modules/quick-view.png');
+		background-repeat: no-repeat;
+		display: block;
+		height: 28px;
+		margin: 5px auto 0;
+		text-indent: -9999em;
+		width: 123px;
+		
+	}
+	#third-party .product span{
+		background: transparent url(../img/modules/preferred-product.png) no-repeat scroll 0 0;
+		display: block;
+		height: 27px;
+		left: 15px;
+		position: absolute;
+		top: 0;
+		width: 17px;
+		
+	}
+	
+	
+/* Content Wrapper
+-----------------------------------------------------*/	
+
+#third-party #content-wrapper{
+	width: 990px;
+	
+}
+
+/* Two Column Layout
+-----------------------------------------------------*/
+nav.col1{
+	float: left;
+	margin-right: 25px;
+	width: 220px;
+	
+}
+div.col2{
+	float: left;
+	position: relative;
+	width: 740px;
+}

@@ -13,8 +13,9 @@
 	#third-party .home.search input[type=text]{
 		left: 34px;
 		padding: 5px 10px;
+		height: 41px;
 		top: 64px;
-		width: 654px;
+		width: 653px;
 
 	}
 	#third-party .home.search input[type=submit]{
@@ -22,7 +23,6 @@
 		right: 299px;
 		
 	}
-
 #third-party .home.search p, #third-party .home.search a{
 	font-family: Helvetica;
 	font-size: 12px;
@@ -42,3 +42,31 @@
 		
 	}
 	#third-party .home.search a:hover{text-decoration:none;}
+	
+
+/* NAV
+-----------------------------------------------------*/
+
+nav.col1 .life-science{
+	background: #DDD url(../img/browse-filter/home-life-science.png) no-repeat scroll 0 0;
+	display: block;
+	height: 45px;
+	width: 219px;
+}
+nav.col1 .life-science:hover{
+	background-position: 0px -45px;
+}
+
+
+/* Products
+-----------------------------------------------------*/
+
+#third-party section.products{
+	position: relative;
+	width: 740px;
+}
+
+	#third-party section.products .product {
+		left: 2px;
+		top: 87px;
+	}

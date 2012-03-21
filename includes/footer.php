@@ -1,5 +1,3 @@
-		</div><!--#main-content-->
-
 		<!--Footer-->
 		<footer>		
 			<div class="top middle"></div>

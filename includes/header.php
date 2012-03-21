@@ -32,6 +32,3 @@
 				<a class="logo" href="index.php"></a>
 			</div>			
 		</header>
-		
-		<!--Page Container-->
-		<div id="main-content">

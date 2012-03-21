@@ -28,7 +28,10 @@ use names rather than letters
 use body id, reset before base
 
 ### TODO FOR MARCH 21 ###
-Print out all new VD
 Search dropdown
-All left rails #browse-filter
-Individual product module .product
+All left rails #browse-filter (Width 220px)
+
+
+LEFT RAIL (220px) 		.col1
+PADDING (30px)				
+MAIN CONTENT (740px)	.col2
