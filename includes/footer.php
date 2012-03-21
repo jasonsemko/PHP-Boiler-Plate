@@ -8,6 +8,7 @@
 		<!-- HUGE Scripts -->
 		<script defer src="js/plugins/jquery-1.7.js"></script>
 		<script defer src="js/plugins/jquery.colorbox.js"></script>
+		<script defer src="js/global.js"></script>
 		<script defer src="js/index.js"></script>
 			
 		<!--[if IE]> </div> <![endif]-->

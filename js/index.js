@@ -7,17 +7,8 @@ $.extend(SIGMA.THIRD_PARTY.index, function() {
 	var methods = {
 		
 		setup: function() {
-			this.colorbox();
-		},
-		
-		colorbox: function() {
-			
-			$("a[rel=colorbox]").colorbox({
-				opacity: 0.8
-			});
-			
-		}
-		
+
+		}		
 	};
 	
 	return {

@@ -26,7 +26,7 @@
 		<!--Header-->
 		<header>			
 			<div class="top middle">
-				<a class="cart" href="overlays/product.html" rel="colorbox">CART (4)</a>
+				<a class="cart" href="cart.php">CART (4)</a>
 			</div>			
 			<div class="btm middle">
 				<a class="logo" href="index.php"></a>

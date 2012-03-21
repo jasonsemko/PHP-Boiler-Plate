@@ -7,7 +7,15 @@ $.extend(SIGMA.THIRD_PARTY.global, function() {
 	var methods = {
 		
 		setup: function() {
-			console.log("setup");
+			this.colorboxSetup();
+		},
+		
+		colorboxSetup: function() {
+			
+			$("a[rel=colorbox]").colorbox({
+				opacity: 0.8
+			});
+			
 		}
 	};
 	
