@@ -20,3 +20,10 @@
 	<footer> #third-party-procurement-footer
 		.footer-container-top
 		.footer-container-btm
+		
+
+### NOTES FROM STYLES ###
+remove 
+use names rather than letters
+use body id, reset before base
+

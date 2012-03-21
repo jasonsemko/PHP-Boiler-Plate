@@ -1,8 +1,8 @@
 var SIGMA = SIGMA || {};
-SIGMA.THIRD_PARTY_PROCUREMENT = SIGMA.THIRD_PARTY_PROCUREMENT || {};
-SIGMA.THIRD_PARTY_PROCUREMENT.product_detail = SIGMA.THIRD_PARTY_PROCUREMENT.product_detail || {};
+SIGMA.THIRD_PARTY = SIGMA.THIRD_PARTY || {};
+SIGMA.THIRD_PARTY.product_detail = SIGMA.THIRD_PARTY.product_detail || {};
 
-$.extend(SIGMA.THIRD_PARTY_PROCUREMENT.product_detail, function() {
+$.extend(SIGMA.THIRD_PARTY.product_detail, function() {
 	
 	var methods = {
 		
@@ -17,9 +17,9 @@ $.extend(SIGMA.THIRD_PARTY_PROCUREMENT.product_detail, function() {
 		}
 	}
 	
-}.call(SIGMA.THIRD_PARTY_PROCUREMENT));
+}.call(SIGMA.THIRD_PARTY));
 
 
 $(window).load(function(){
-	SIGMA.THIRD_PARTY_PROCUREMENT.product_detail.init();	
+	SIGMA.THIRD_PARTY.product_detail.init();	
 });

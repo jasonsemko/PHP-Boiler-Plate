@@ -1,8 +1,8 @@
 var SIGMA = SIGMA || {};
-SIGMA.THIRD_PARTY_PROCUREMENT = SIGMA.THIRD_PARTY_PROCUREMENT || {};
-SIGMA.THIRD_PARTY_PROCUREMENT.antibiotics = SIGMA.THIRD_PARTY_PROCUREMENT.antibiotics || {};
+SIGMA.THIRD_PARTY = SIGMA.THIRD_PARTY || {};
+SIGMA.THIRD_PARTY.antibiotics = SIGMA.THIRD_PARTY.antibiotics || {};
 
-$.extend(SIGMA.THIRD_PARTY_PROCUREMENT.antibiotics, function() {
+$.extend(SIGMA.THIRD_PARTY.antibiotics, function() {
 	
 	var methods = {
 		
@@ -17,9 +17,9 @@ $.extend(SIGMA.THIRD_PARTY_PROCUREMENT.antibiotics, function() {
 		}
 	}
 	
-}.call(SIGMA.THIRD_PARTY_PROCUREMENT));
+}.call(SIGMA.THIRD_PARTY));
 
 
 $(window).load(function(){
-	SIGMA.THIRD_PARTY_PROCUREMENT.antibiotics.init();	
+	SIGMA.THIRD_PARTY.antibiotics.init();	
 });

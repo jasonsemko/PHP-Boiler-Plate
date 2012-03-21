@@ -1,8 +1,8 @@
 var SIGMA = SIGMA || {};
-SIGMA.THIRD_PARTY_PROCUREMENT = SIGMA.THIRD_PARTY_PROCUREMENT || {};
-SIGMA.THIRD_PARTY_PROCUREMENT.life_science = SIGMA.THIRD_PARTY_PROCUREMENT.life_science || {};
+SIGMA.THIRD_PARTY = SIGMA.THIRD_PARTY || {};
+SIGMA.THIRD_PARTY.life_science = SIGMA.THIRD_PARTY.life_science || {};
 
-$.extend(SIGMA.THIRD_PARTY_PROCUREMENT.life_science, function() {
+$.extend(SIGMA.THIRD_PARTY.life_science, function() {
 	
 	var methods = {
 		
@@ -17,9 +17,9 @@ $.extend(SIGMA.THIRD_PARTY_PROCUREMENT.life_science, function() {
 		}
 	}
 	
-}.call(SIGMA.THIRD_PARTY_PROCUREMENT));
+}.call(SIGMA.THIRD_PARTY));
 
 
 $(window).load(function(){
-	SIGMA.THIRD_PARTY_PROCUREMENT.life_science.init();	
+	SIGMA.THIRD_PARTY.life_science.init();	
 });
