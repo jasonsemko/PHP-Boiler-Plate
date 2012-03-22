@@ -13,7 +13,9 @@
 		<link href="css/global.css" rel="stylesheet">			
 		<link href="css/SIGMA.css" rel="stylesheet">			
 		
-		<link href="css/index.css" rel="stylesheet">			
+		<link href="css/index.css" rel="stylesheet">
+		<link href="css/product-detail.css" rel="stylesheet">
+		<link href="css/antibiotics.css" rel="stylesheet">
 	</head> 
 
 	<body id="third-party">

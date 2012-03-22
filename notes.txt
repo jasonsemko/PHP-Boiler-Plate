@@ -27,11 +27,10 @@ remove
 use names rather than letters
 use body id, reset before base
 
-### TODO FOR MARCH 21 ###
-Search dropdown
-All left rails #browse-filter (Width 220px)
+### TODO FOR MARCH 22 ###
 
-
-LEFT RAIL (220px) 		.col1
-PADDING (30px)				
-MAIN CONTENT (740px)	.col2
+Shopping Cart
+Request a product
+Dropdown Search
+Life Science
+Search Results (After Clarification with Maia)

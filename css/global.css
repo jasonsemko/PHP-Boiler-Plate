@@ -245,18 +245,14 @@
 
 /* Two Column Layout
 -----------------------------------------------------*/
-#third-party nav.col1{
-	background-color: #F4F3F0;
-	float: left;
-	margin-right: 25px;
-	padding: 15px;
-	width: 190px;
-	
-}
-#third-party div.col2{
-	float: left;
-	position: relative;
-	width: 740px;
-}
+#third-party .col{display: block;float: left;margin-bottom: 50px;position:relative;}
+
+#third-party .col1.small{width: 220px;}
+#third-party .col2.small{width: 240px;}
+
+#third-party .col.large{width: 740px;}
+
+#third-party .col1.small{margin-right:25px;}
+#third-party .col1.large{margin-right:10px;}
 
 #third-party .page-title{margin-bottom: 20px;}
