@@ -11,11 +11,11 @@
 	</nav><!--#browse-filter-->
 	
 	<div class="col col2 large">
-		<img src="img/main-content-col2/vancomycin-carousel.jpg" width="738" height="300" alt="Vancomycin Carousel" />
+		<img src="img/home/vancomycin-carousel.jpg" width="738" height="300" alt="Vancomycin Carousel" />
 		
 		<section class="products">
 			<?php require_once('includes/product.html'); 		?>
-			<img src="img/main-content-col2/home-products.jpg" width="738" height="555" alt="Home Products" />
+			<img src="img/home/home-products.jpg" alt="Home Products" />
 		</section>
 	</div>
 	

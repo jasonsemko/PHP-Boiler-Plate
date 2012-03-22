@@ -5,3 +5,18 @@
 	margin-bottom: 40px;
 	text-align: center;
 }
+	#third-party #product-detail .pricing{
+		background: transparent url(../img/product-detail/pricing.png) no-repeat scroll 0 0;
+		display: block;
+		height: 400px;
+		position: relative;
+		width: 740px;
+	}
+		#third-party #product-detail .inputs{
+			right: 125px;
+			top: 130px;
+		}
+	#third-party #product-detail a.cart-button{
+		bottom: 80px;
+		right: 70px;
+	}

@@ -29,8 +29,10 @@ use body id, reset before base
 
 ### TODO FOR MARCH 22 ###
 
-Shopping Cart
-Request a product
 Dropdown Search
 Life Science
 Search Results (After Clarification with Maia)
+
+
+### JS NOTES ###
+On the product module, use a cursor on hover, on click take user to product page

@@ -75,7 +75,7 @@
 	position: relative;
 	
 }
-	#overlay img{
+	#overlay .properties-pricing img{
 		float: left;
 		
 	}
@@ -83,13 +83,13 @@
 		margin-right: 20px;
 		
 	}
+	#third-party .inputs{position:absolute;}
 	#overlay .inputs{
-		position: absolute;
 		right: 96px;
-		top: 221px;
+		top: 223px;
 		
 	}
-		#overlay .inputs input{
+		#third-party .inputs input{
 			border: 1px solid #cac9c7;
 			display: block;
 			font-weight: bold;
@@ -100,16 +100,17 @@
 			width: 30px;
 			
 		}
-	#overlay a{
-		bottom: 40px;
+	#third-party a.cart-button{
 		display: block;
 		height: 30px;
 		position: absolute;
-		right: 37px;
 		width: 135px;
 		
 	}
-	
+	#overlay a.cart-button{
+		bottom: 40px;
+		right: 37px;
+	}
 
 /* Search / Breadcrumbs
 -----------------------------------------------------*/
@@ -194,7 +195,7 @@
 #third-party .product{
 	background-color: #eaeae8;
 	display: block;
-	height: 230px;
+	height: 240px;
 	position: absolute;
 	text-align: center;
 	width: 240px;
@@ -202,6 +203,7 @@
 }
 #third-party .product:hover{
 	background-color: #d3d3cc;
+	cursor: pointer;
 }
 	#third-party .product img{
 		padding: 5px 0;
@@ -210,8 +212,11 @@
 	#third-party .product p{
 		color: #333;
 		font: bold 12px Arial, sans-serif;
-		padding: 2px 0;
+		padding: 1px 0;
 		
+	}
+	#third-party .product p.name{
+		height: 32px;
 	}
 	#third-party .product a{
 		background-image: url('../img/modules/quick-view.png');

@@ -16,6 +16,12 @@
 		<link href="css/index.css" rel="stylesheet">
 		<link href="css/product-detail.css" rel="stylesheet">
 		<link href="css/antibiotics.css" rel="stylesheet">
+		<link href="css/request.css" rel="stylesheet">
+		<link href="css/life-science.css" rel="stylesheet">
+		
+		<script src="js/plugins/jquery-1.7.js"></script>
+		<script src="js/plugins/jquery.modernizr-2.5.3.js"></script>
+		<script src="js/plugins/jquery.colorbox.js"></script>
 	</head> 
 
 	<body id="third-party">
