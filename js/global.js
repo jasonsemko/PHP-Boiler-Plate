@@ -14,7 +14,7 @@ $.extend(SIGMA.THIRD_PARTY.global, function() {
 		
 		colorboxSetup: function() {
 			
-			$("a[rel=colorbox]").colorbox({
+			$("a.colorbox").colorbox({
 				opacity: 0.8
 			});
 		},
@@ -28,7 +28,7 @@ $.extend(SIGMA.THIRD_PARTY.global, function() {
 				if(products[i].className === "product") {
 					
 					product = products[i];
-					link = product.attributes.href.nodeValue;
+					link = product.attributes.title.nodeValue;
 					
 					this.fastClick(product, function(e) {
 						

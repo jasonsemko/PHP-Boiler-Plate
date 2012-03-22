@@ -1,2 +1,28 @@
 #third-party #antibiotics .col1{background-color: #F4F3F0;}
 #third-party #antibiotics .col1 div.inner{padding: 15px;}
+#third-party #antibiotics .col2 div.results-dropdown{
+	background:transparent url(../img/antibiotics/results-dropdown.png) no-repeat scroll 0 0;
+	display:block;
+	height:22px;
+	width: 740px;
+
+}
+#third-party #antibiotics section.products .product {
+	left: 250px;
+	top: 53px;
+
+}
+#third-party #antibiotics .request-a-product{
+	background: #DDD url(../img/browse-filter/request-a-product.png) no-repeat scroll 0 0;
+	display: block;
+	height: 200px;
+	position: relative;
+	width: 190px;
+
+}
+	#third-party #antibiotics .request-a-product a{
+		bottom: 0;
+		left: 0;
+		width: 180px;
+		
+	}

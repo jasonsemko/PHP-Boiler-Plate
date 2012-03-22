@@ -10,13 +10,20 @@
 	<nav class="col col1 small">
 		<div class="inner">
 			<?php require_once('includes/filtering.html'); ?>
-			<img src="img/browse-filter/request-a-product.png" width="193" height="246" alt="Request A Product" />
+			<div class="request-a-product">
+				<a class="cart-button" href="request.php"></a>
+			</div>
 		</div>
+		
 	</nav><!--.col1-->
 	
-	<div class="col col2 large"></div><!--.col2-->
-	
-	<img src="img/antibiotics/paging.png" width="987" height="157" alt="Paging" />
+	<div class="col col2 large">
+		<div class="results-dropdown"></div>
+		<section class="products">
+			<?php require_once('includes/product.html'); 		?>
+			<img src="img/antibiotics/products.png" alt="Products" />
+		</section>
+	</div><!--.col2-->
 	
 </div><!--#content-wrapper-->
 		

@@ -17,91 +17,91 @@
         
         		<div class="RefinementDimensionText">
             		<div>
-            		  	<input onclick="#" type="checkbox" />
+            		  	<input type="checkbox" />
        		    		<span class="RefineDimensionTextResultText">Analytical/ Chromatography
           		      		<span class="RefineDimensionTextResultCount">(4)</span>
           		    	</span>
           		  	</div>
           		  	<div>
-            			<input onclick="#" type="checkbox" />
+            			<input type="checkbox" />
           		    	<span class="RefineDimensionTextResultText">Antibiotics
           		      		<span class="RefineDimensionTextResultCount">(1)</span>
           		    	</span>
           		  	</div>
           		  	<div>
-            		  	<input onclick="#" type="checkbox" />
+            		  	<input type="checkbox" />
           		    	<span class="RefineDimensionTextResultText">Biochemicals and Reagents
           		      		<span class="RefineDimensionTextResultCount">(5)</span>
           		    	</span>
           		  	</div>
           		  	<div>
-            		  	<input onclick="#" type="checkbox" />
+            		  	<input type="checkbox" />
           		    	<span class="RefineDimensionTextResultText">Cancer Research
           		      		<span class="RefineDimensionTextResultCount">(1)</span>
           		    	</span>
           		  	</div>
           		  	<div>
-            		  	<input onclick="#" type="checkbox" />
+            		  	<input type="checkbox" />
           		    	<span class="RefineDimensionTextResultText">Cell Biology
           		      		<span class="RefineDimensionTextResultCount">(6)</span>
           		    	</span>
           		  	</div>
           		  	<div>
-            		  	<input onclick="#" type="checkbox" />
+            		  	<input type="checkbox" />
           		    	<span class="RefineDimensionTextResultText">Cell Culture
           		      		<span class="RefineDimensionTextResultCount">(1)</span>
           		    	</span>
           		  	</div>
           		  	<div>
-            		  	<input onclick="#" type="checkbox" />
+            		  	<input type="checkbox" />
           		    	<span class="RefineDimensionTextResultText">Chemical Synthesis
           		      		<span class="RefineDimensionTextResultCount">(1)</span>
           		    	</span>
           		  	</div>
           		  	<div>
-            		  	<input onclick="#" type="checkbox" />
+            		  	<input type="checkbox" />
           		    	<span class="RefineDimensionTextResultText">Hematology and Histology
           		      		<span class="RefineDimensionTextResultCount">(1)</span>
           		    	</span>
           		  	</div>
           		  	<div>
-            		  	<input onclick="#" type="checkbox" />
+            		  	<input type="checkbox" />
           		    	<span class="RefineDimensionTextResultText">Labware
           		      		<span class="RefineDimensionTextResultCount">(4)</span>
           		    	</span>
           		  	</div>
           		  	<div>
-            		  	<input onclick="#" type="checkbox" />
+            		  	<input type="checkbox" />
           		    	<span class="RefineDimensionTextResultText">Molecular Biology
           		      		<span class="RefineDimensionTextResultCount">(17)</span>
           		    	</span>
           		  	</div>
           		  	<div>
-            		  	<input onclick="#" type="checkbox" />
+            		  	<input type="checkbox" />
           		    	<span class="RefineDimensionTextResultText">Plant Biotechnology
           		      		<span class="RefineDimensionTextResultCount">(3)</span>
           		    	</span>
           		  	</div>
           		  	<div>
-	            		<input onclick="#" type="checkbox" />
+	            		<input type="checkbox" />
 	          		    <span class="RefineDimensionTextResultText">Proteomics
 	          		      <span class="RefineDimensionTextResultCount">(2)</span>
 	          			</span>
 	          		</div>
 	          		<div>
-	            		<input onclick="#" type="checkbox" />
+	            		<input type="checkbox" />
 	          		    <span class="RefineDimensionTextResultText">Research Essentials
 	          		      <span class="RefineDimensionTextResultCount">(19)</span>
 	          			</span>
 	          		</div>
           		  	<div>
-	            		<input onclick="#" type="checkbox" />
+	            		<input type="checkbox" />
 	          		    <span class="RefineDimensionTextResultText">Solvents
 	          		      <span class="RefineDimensionTextResultCount">(4)</span>
 	          		    </span>
 	          		</div>
 	          		<div>
-	            		<input onclick="#" type="checkbox" />
+	            		<input type="checkbox" />
 	          		    <span class="RefineDimensionTextResultText">Aldrich
 	          		      <span class="RefineDimensionTextResultCount">(3)</span>
 	          		    </span>
@@ -117,31 +117,31 @@
         		</div>
         		<div class="RefinementDimensionText">
                 	<div>
-	    		  		<input onclick="#" type="checkbox" />
+	    		  		<input type="checkbox" />
 	  		    		<span class="RefineDimensionTextResultText">Aldrich
 	  		      			<span class="RefineDimensionTextResultCount">(3)</span>
 	  		    		</span>
 	  		  		</div>
 	  		  		<div>
-	    		  		<input onclick="#" type="checkbox" />
+	    		  		<input type="checkbox" />
 	  		    		<span class="RefineDimensionTextResultText">Fluka
 	  		      			<span class="RefineDimensionTextResultCount">(5)</span>
 	  		    		</span>
 	  		  		</div>
 	  		  		<div>
-	    		  		<input onclick="#" type="checkbox" />
+	    		  		<input type="checkbox" />
 	  		    		<span class="RefineDimensionTextResultText">Sigma
 	  		      			<span class="RefineDimensionTextResultCount">(19)</span>
 	  		    		</span>
 	  		  		</div>
 	  		  		<div>
-	    		  		<input onclick="#" type="checkbox" />
+	    		  		<input type="checkbox" />
 	  		    		<span class="RefineDimensionTextResultText">Sigma-Aldrich
 	  		      			<span class="RefineDimensionTextResultCount">(1)</span>
 	  		    		</span>
 	  		  		</div>
 	    			<div>
-	    		  		<input onclick="#" type="checkbox" />
+	    		  		<input type="checkbox" />
 	  		    		<span class="RefineDimensionTextResultText">Supelco
 	  		      			<span class="RefineDimensionTextResultCount">(1)</span>
 	  		    		</span>
@@ -156,19 +156,19 @@
 	        	</div>
 	        	<div class="RefinementDimensionText">
 	       			<div>
-	            	 	<input onclick="#" type="checkbox" />
+	            	 	<input type="checkbox" />
 	          		    <span class="RefineDimensionTextResultText">ACS reagent</span>
 	          		</div>
 	          		<div>
-	            		<input onclick="#" type="checkbox" />
+	            		<input type="checkbox" />
 	          		    <span class="RefineDimensionTextResultText">Analytical</span>
 	      		  	</div>
 	          		<div>
-	            		<input onclick="#" type="checkbox" />
+	            		<input type="checkbox" />
 	          		    <span class="RefineDimensionTextResultText">Biotechnology</span>
 	      		  	</div>
 	          		<div>
-	            		<input onclick="#" type="checkbox" />
+	            		<input type="checkbox" />
 	          		    <span class="RefineDimensionTextResultText">Biotechnology Performance Certified</span>
 	      		  	</div>
 	      		</div>
@@ -181,7 +181,7 @@
 	        	</div>
 	        	<div class="RefinementDimensionText">
 	        		<div>
-	      		  		<input onclick="#" type="checkbox" />
+	      		  		<input type="checkbox" />
 	          		    <span class="RefineDimensionTextResultText">White
 	          		    	<span class="RefineDimensionTextResultCount">(4)</span>
 	          		    </span>
