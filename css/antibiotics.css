@@ -23,17 +23,3 @@
 	top: 332px;
 
 }
-#third-party #antibiotics .request-a-product{
-	background: #DDD url(../img/browse-filter/request-a-product.png) no-repeat scroll 0 0;
-	display: block;
-	height: 200px;
-	position: relative;
-	width: 190px;
-
-}
-	#third-party #antibiotics .request-a-product a{
-		bottom: 0;
-		left: 0;
-		width: 180px;
-		
-	}

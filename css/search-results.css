@@ -1,0 +1,37 @@
+#third-party #search-results .col1{background-color: #F4F3F0;margin-right:30px;}
+#third-party #search-results .col1 div.inner{padding: 15px;}
+#third-party #search-results .results-dropdown{
+	background: #DDD url(../img/search-results/exact-sort.png) no-repeat scroll 0 0;
+	height: 33px;
+	position:relative;
+	width: 722px;
+
+}
+#third-party #search-results .results-dropdown select{
+	position:absolute;
+	right:0;
+	top:0;
+
+}
+#third-party #search-results .exact-results-container{
+	background:transparent url(../img/search-results/exact-results.png) no-repeat scroll 0 0;
+	display: block;
+	height: 625px;
+	position: relative;
+	width: 722px;
+	
+}
+#third-party #search-results .inputs.top{
+	right: 84px;
+	top: 225px;
+
+}
+#third-party #search-results .inputs.bottom{
+	bottom: 80px;
+	right: 84px;
+
+}
+#third-party #search-results .cart-button.exact{
+	right: 0;
+	bottom: 25px;
+}
