@@ -60,6 +60,9 @@ $.extend(SIGMA.THIRD_PARTY.global, function() {
 	return {
 		init: function() {
 			methods.setup();
+		},
+		fastClick: function(o,f) {
+			methods.fastClick(o,f);
 		}
 	}
 	

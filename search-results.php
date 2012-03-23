@@ -25,24 +25,30 @@
 					<option value="6">Formula Weight ↑</option>
 					<option value="7">Formula Weight ↓</option>				
 			</select>
-		</div>
+		</div><!--results-dropdown-->
 		
-		<div class="exact-results-container">
+		<img src="img/search-results/generic-top-result.png" alt="Generic Top Result" />
+		
+		<!--Active Vancomycin-->
+		<div class="vancomycin">
+			<div class="vancomycin-top collapsed">
+				<a href="#" id="pricing-expand-collapse"></a>
+			</div>
 			<div class="pricing">
-				<div class="inputs top">
+				<div class="inputs single">
 					<input type="text" name="quantity" value="0" />
 					<input type="text" name="quantity" value="0" />
 					<input type="text" name="quantity" value="0" />
 					<input type="text" name="quantity" value="0" />	
 				</div>
-				<div class="inputs bottom">
-					<input type="text" name="quantity" value="0" />
-					<input type="text" name="quantity" value="0" />
-				</div>
-				<a class="cart-button exact" href="cart.php"></a>
-			</div><!--.pricing-->
+				<a class="cart-button generic" href="cart.php"></a>
+			</div>
+			<img src="img/search-results/vancomycin-bottom.png" alt="Vancomycin Bottom" />
 		</div>
+		<!--End Active Vancomycin-->
 		
+		<img src="img/search-results/generic-bottom-results.png" alt="Generic Bottom Results" />
+		<img src="img/search-results/paging.png" alt="Paging" />
 	</div>
 </div><!--#content-wrapper-->
 <?php require_once('includes/footer.php'); 		?>

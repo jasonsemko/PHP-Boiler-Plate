@@ -28,7 +28,7 @@
 		</div>
 		
 		<div class="exact-results-container">
-			<div class="pricing">
+			<div id="slide-down-pricing" class="pricing">
 				<div class="inputs top">
 					<input type="text" name="quantity" value="0" />
 					<input type="text" name="quantity" value="0" />

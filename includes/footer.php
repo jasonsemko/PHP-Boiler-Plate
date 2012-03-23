@@ -8,6 +8,7 @@
 		<!-- HUGE Scripts -->
 		<script defer src="js/global.js"></script>
 		<script defer src="js/index.js"></script>
+		<script defer src="js/search-results.js"></script>
 			
 		<!--[if IE]> </div> <![endif]-->
 	</body>

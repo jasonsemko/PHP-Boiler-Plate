@@ -21,17 +21,35 @@
 	width: 722px;
 	
 }
-#third-party #search-results .inputs.top{
-	right: 84px;
-	top: 225px;
 
-}
-#third-party #search-results .inputs.bottom{
-	bottom: 80px;
-	right: 84px;
+/*PRICING INPUTS AND CART BUTTONS*/
+#third-party #search-results .inputs.top{right:84px;top:225px;}
+#third-party #search-results .inputs.bottom{bottom:80px;right:84px;}
+#third-party #search-results .cart-button.exact{bottom:25px;right:0;}
+#third-party #search-results .cart-button.generic{bottom:25px;right:47px;}
+#third-party #search-results .inputs.single{right:102px;top:40px;}
 
+#third-party #search-results .vancomycin div.vancomycin-top{
+	background:transparent url(../img/search-results/vancomycin-top.png) no-repeat scroll 0 0;
+	display: block;
+	height: 170px;
+	position:relative;
 }
-#third-party #search-results .cart-button.exact{
-	right: 0;
-	bottom: 25px;
+	#third-party #search-results .vancomycin div.vancomycin-top a{
+		bottom: 25px;
+		display: block;
+		height: 16px;
+		position: absolute;
+		right: 17px;
+		width: 60px;
+	}
+#third-party #search-results .vancomycin div.vancomycin-top.expanded{
+	background-position:0 -170px;
+}
+
+#third-party #search-results .vancomycin div.pricing{
+	background:transparent url(../img/search-results/pricing.png) no-repeat scroll 0 0;
+	display:none;
+	height: 257px;
+	position:relative;
 }
