@@ -18,7 +18,17 @@
 	</nav><!--.col1-->
 	
 	<div class="col col2 large">
-		<div class="results-dropdown"></div>
+		<div class="results-dropdown">
+			<select>				
+					<option selected="true" value="1">Sort By Relevance</option>					
+					<option value="2">Name ↑</option>
+					<option value="3">Name ↓</option>
+					<option value="4">Base Name ↑</option>
+					<option value="5">Base Name ↓</option>
+					<option value="6">Formula Weight ↑</option>
+					<option value="7">Formula Weight ↓</option>				
+			</select>
+		</div>
 		<section class="products">
 			<?php require_once('includes/product.html'); 		?>
 			<img src="img/antibiotics/products.png" alt="Products" />

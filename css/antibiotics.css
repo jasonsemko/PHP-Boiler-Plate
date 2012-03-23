@@ -4,12 +4,23 @@
 	background:transparent url(../img/antibiotics/results-dropdown.png) no-repeat scroll 0 0;
 	display:block;
 	height:22px;
+	position: relative;
 	width: 740px;
 
 }
+	#third-party #antibiotics .col2 div.results-dropdown select{
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
 #third-party #antibiotics section.products .product {
 	left: 250px;
 	top: 53px;
+
+}
+#third-party #antibiotics section.products.alternative .product {
+	left: 0px;
+	top: 332px;
 
 }
 #third-party #antibiotics .request-a-product{
