@@ -10,186 +10,67 @@
 	<nav class="col col1 small">
 		<div class="WidgetBox">
 			<div class="RefinementDimension noBorder">
-        		<div class="RefinementDimensionHeader">
-              		<span class="results-sprite"></span>
-            		<span class="refinementDimensionHeaderText"><strong>Product Category</strong></span><br>
-        		</div>
+        <div class="RefinementDimensionHeader">
+          <span class="results-sprite"></span>
+          <span class="refinementDimensionHeaderText"><strong>Product Category</strong></span><br>
+        </div>
         
-        		<div class="RefinementDimensionText">
-            		<div>
-            		  	<input type="checkbox" />
-       		    		<span class="RefineDimensionTextResultText">Analytical/ Chromatography
-          		      		<span class="RefineDimensionTextResultCount">(4)</span>
-          		    	</span>
-          		  	</div>
-          		  	<div>
-            			<input type="checkbox" />
-          		    	<span class="RefineDimensionTextResultText">Antibiotics
-          		      		<span class="RefineDimensionTextResultCount">(1)</span>
-          		    	</span>
-          		  	</div>
-          		  	<div>
-            		  	<input type="checkbox" />
-          		    	<span class="RefineDimensionTextResultText">Biochemicals and Reagents
-          		      		<span class="RefineDimensionTextResultCount">(5)</span>
-          		    	</span>
-          		  	</div>
-          		  	<div>
-            		  	<input type="checkbox" />
-          		    	<span class="RefineDimensionTextResultText">Cancer Research
-          		      		<span class="RefineDimensionTextResultCount">(1)</span>
-          		    	</span>
-          		  	</div>
-          		  	<div>
-            		  	<input type="checkbox" />
-          		    	<span class="RefineDimensionTextResultText">Cell Biology
-          		      		<span class="RefineDimensionTextResultCount">(6)</span>
-          		    	</span>
-          		  	</div>
-          		  	<div>
-            		  	<input type="checkbox" />
-          		    	<span class="RefineDimensionTextResultText">Cell Culture
-          		      		<span class="RefineDimensionTextResultCount">(1)</span>
-          		    	</span>
-          		  	</div>
-          		  	<div>
-            		  	<input type="checkbox" />
-          		    	<span class="RefineDimensionTextResultText">Chemical Synthesis
-          		      		<span class="RefineDimensionTextResultCount">(1)</span>
-          		    	</span>
-          		  	</div>
-          		  	<div>
-            		  	<input type="checkbox" />
-          		    	<span class="RefineDimensionTextResultText">Hematology and Histology
-          		      		<span class="RefineDimensionTextResultCount">(1)</span>
-          		    	</span>
-          		  	</div>
-          		  	<div>
-            		  	<input type="checkbox" />
-          		    	<span class="RefineDimensionTextResultText">Labware
-          		      		<span class="RefineDimensionTextResultCount">(4)</span>
-          		    	</span>
-          		  	</div>
-          		  	<div>
-            		  	<input type="checkbox" />
-          		    	<span class="RefineDimensionTextResultText">Molecular Biology
-          		      		<span class="RefineDimensionTextResultCount">(17)</span>
-          		    	</span>
-          		  	</div>
-          		  	<div>
-            		  	<input type="checkbox" />
-          		    	<span class="RefineDimensionTextResultText">Plant Biotechnology
-          		      		<span class="RefineDimensionTextResultCount">(3)</span>
-          		    	</span>
-          		  	</div>
-          		  	<div>
-	            		<input type="checkbox" />
-	          		    <span class="RefineDimensionTextResultText">Proteomics
-	          		      <span class="RefineDimensionTextResultCount">(2)</span>
-	          			</span>
-	          		</div>
-	          		<div>
-	            		<input type="checkbox" />
-	          		    <span class="RefineDimensionTextResultText">Research Essentials
-	          		      <span class="RefineDimensionTextResultCount">(19)</span>
-	          			</span>
-	          		</div>
-          		  	<div>
-	            		<input type="checkbox" />
-	          		    <span class="RefineDimensionTextResultText">Solvents
-	          		      <span class="RefineDimensionTextResultCount">(4)</span>
-	          		    </span>
-	          		</div>
-	          		<div>
-	            		<input type="checkbox" />
-	          		    <span class="RefineDimensionTextResultText">Aldrich
-	          		      <span class="RefineDimensionTextResultCount">(3)</span>
-	          		    </span>
-	          		</div>
-        		</div>
-    		</div>
+        <div class="RefinementDimensionText">
+      	  <a href="antibiotics.php">Antibiotics</a>
+      	  <a href="antibiotics.php">Antibodies</a>
+      	  <a href="antibiotics.php">Assays &amp; Kits</a>
+      	  <a href="antibiotics.php">Bioactive Small Molecules</a>
+      	  <a href="antibiotics.php">Biochemicals and Reagents</a>
+      	  <a href="antibiotics.php">Cell Culture Reagents</a>
+      	  <a href="antibiotics.php">Core Bioreagents</a>
+      	  <a href="antibiotics.php">Custom Oligos</a>
+      	  <a href="antibiotics.php">Enzymes</a>
+      	  <a href="antibiotics.php">Molecular Biology Reagents</a>
+      	  <a href="antibiotics.php">Peptides and Proteins</a>
+        </div>
+        
+    	</div>
 
-
-    		<div class="RefinementDimension">
+  		<div class="RefinementDimension">
 				<div class="RefinementDimensionHeader">
-        			<span class="results-sprite"></span>
-            		<span class="refinementDimensionHeaderText"><strong>Brand</strong></span><br>
-        		</div>
-        		<div class="RefinementDimensionText">
-                	<div>
-	    		  		<input type="checkbox" />
-	  		    		<span class="RefineDimensionTextResultText">Aldrich
-	  		      			<span class="RefineDimensionTextResultCount">(3)</span>
-	  		    		</span>
-	  		  		</div>
-	  		  		<div>
-	    		  		<input type="checkbox" />
-	  		    		<span class="RefineDimensionTextResultText">Fluka
-	  		      			<span class="RefineDimensionTextResultCount">(5)</span>
-	  		    		</span>
-	  		  		</div>
-	  		  		<div>
-	    		  		<input type="checkbox" />
-	  		    		<span class="RefineDimensionTextResultText">Sigma
-	  		      			<span class="RefineDimensionTextResultCount">(19)</span>
-	  		    		</span>
-	  		  		</div>
-	  		  		<div>
-	    		  		<input type="checkbox" />
-	  		    		<span class="RefineDimensionTextResultText">Sigma-Aldrich
-	  		      			<span class="RefineDimensionTextResultCount">(1)</span>
-	  		    		</span>
-	  		  		</div>
-	    			<div>
-	    		  		<input type="checkbox" />
-	  		    		<span class="RefineDimensionTextResultText">Supelco
-	  		      			<span class="RefineDimensionTextResultCount">(1)</span>
-	  		    		</span>
-	  		  		</div>
-				</div>
+  			  <span class="results-sprite"></span>
+          <span class="refinementDimensionHeaderText"><strong>Techniques</strong></span><br>
+        </div>
+        <div class="RefinementDimensionText">
+          <a href="antibiotics.php">Lorem</a>
+      	  <a href="antibiotics.php">Ipsum</a>
+      	  <a href="antibiotics.php">Chemical</a>
+      	  <a href="antibiotics.php">Biological</a>
+      	  <a href="antibiotics.php">Physical</a>
+        </div>
+  		</div>
+
+  		<div class="RefinementDimension">
+      	<div class="RefinementDimensionHeader">
+        	<span class="results-sprite"></span>
+        	<span class="refinementDimensionHeaderText"><strong>Brands</strong></span><br>
+      	</div>
+      	<div class="RefinementDimensionText">
+     			<a href="antibiotics.php">Merck</a>
+      	  <a href="antibiotics.php">Sigma</a>
+      	  <a href="antibiotics.php">Aldrich</a>
     		</div>
+    	</div>
 
-    		<div class="RefinementDimension">
-	        	<div class="RefinementDimensionHeader">
-	              	<span class="results-sprite"></span>
-	            	<span class="refinementDimensionHeaderText"><strong>Special Grade</strong></span><br>
-	        	</div>
-	        	<div class="RefinementDimensionText">
-	       			<div>
-	            	 	<input type="checkbox" />
-	          		    <span class="RefineDimensionTextResultText">ACS reagent</span>
-	          		</div>
-	          		<div>
-	            		<input type="checkbox" />
-	          		    <span class="RefineDimensionTextResultText">Analytical</span>
-	      		  	</div>
-	          		<div>
-	            		<input type="checkbox" />
-	          		    <span class="RefineDimensionTextResultText">Biotechnology</span>
-	      		  	</div>
-	          		<div>
-	            		<input type="checkbox" />
-	          		    <span class="RefineDimensionTextResultText">Biotechnology Performance Certified</span>
-	      		  	</div>
-	      		</div>
-	    	</div>
-
-	    	<div class="RefinementDimension">
-	        	<div class="RefinementDimensionHeader">
-	              	<span class="results-sprite"></span>
-	            	<span class="refinementDimensionHeaderText"><strong>Color</strong></span><br>
-	        	</div>
-	        	<div class="RefinementDimensionText">
-	        		<div>
-	      		  		<input type="checkbox" />
-	          		    <span class="RefineDimensionTextResultText">White
-	          		    	<span class="RefineDimensionTextResultCount">(4)</span>
-	          		    </span>
-	  		  		</div>
-	        	</div>
-	    	</div>
+	  	<div class="RefinementDimension">
+	  	  <div class="RefinementDimensionHeader">
+	        <span class="results-sprite"></span>
+	        <span class="refinementDimensionHeaderText"><strong>Services</strong></span><br>
+	      </div>
+	      <div class="RefinementDimensionText">
+    		  <a href="antibiotics.php">Purification</a>
+    		  <a href="antibiotics.php">Documentations</a>
+	      </div>
+	    </div>
 	 	</div><!--widgetBox-->
 	</nav><!--.col1-->
+	
+	
 	
 	<div class="col col2 large">
 		<img src="img/life-science/latest.jpg" width="739" height="390" alt="Latest" />

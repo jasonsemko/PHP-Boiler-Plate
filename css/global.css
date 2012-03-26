@@ -263,8 +263,10 @@
 #third-party .page-title{margin-bottom: 20px;}
 
 
-/* Request a Product
+/* Left Rail (Browse and Filter)
 -----------------------------------------------------*/
+#third-party
+
 #third-party .request-a-product{
 	background: #DDD url(../img/browse-filter/request-a-product.png) no-repeat scroll 0 0;
 	display: block;
@@ -279,3 +281,4 @@
 		width: 180px;
 		
 	}
+	

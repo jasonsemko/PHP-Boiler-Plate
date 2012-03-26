@@ -54,11 +54,18 @@
 }
 #third-party .WidgetBox div.RefinementDimensionText{
   display:none;
+	font: normal bold 11px Arial, sans-serif;
   font-weight:bold;
   font-size:11px;
   color:#1d5293;
   padding-left:10px;
   _height:auto;
+}
+#third-party .WidgetBox div.RefinementDimensionText a{
+	color: #1d5293;
+	display: block;
+  line-height: 24px;
+  padding-left: 13px;
 }
 #third-party .WidgetBox div.RefinementDimensionText input{
   margin:0 2px 0 0;

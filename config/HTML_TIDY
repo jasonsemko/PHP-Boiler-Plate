@@ -1,0 +1,10 @@
+new-blocklevel-tags: header, section, nav, footer
+show-errors: 0
+show-warnings: 0
+quiet: 1
+wrap: 0
+indent: 1
+indent-spaces: 2
+sort-attributes: alpha
+tidy-mark: yes
+wrap-attributes: no
