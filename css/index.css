@@ -4,7 +4,7 @@
 	background-image: url(../img/search/home-search.jpg);
 	background-repeat: no-repeat;
 	display: block;
-	height: 170px;
+	height: 168px;
 	margin: 0 auto 50px;
 	position: relative;
 	width: 990px;
@@ -12,8 +12,8 @@
 }
 	#third-party .home.search input[type=text]{
 		left: 34px;
-		padding: 5px 10px;
-		height: 41px;
+		padding: 15px;
+		height: 21px;
 		top: 64px;
 		width: 653px;
 
@@ -36,7 +36,7 @@
 		position: absolute;
 		
 	}
-	#third-party .home.search a{
+	#third-party .home.search a.request{
 		border-bottom: 1px solid #f6534c;
 		color: #f82c24;
 		

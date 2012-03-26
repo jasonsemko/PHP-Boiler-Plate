@@ -138,8 +138,8 @@
 			color: #403C36;
 			font-size: 16px;
 			font-weight: bold;
-			height: 41px;
-			padding: 0 10px;
+			height: 21px;
+			padding: 10px;
 			width: 548px;
 			z-index: 5;
 
@@ -157,7 +157,7 @@
 			z-index: 10;
 		
 		}
-	#third-party .search.global a{
+	#third-party .search.global a.request{
 		bottom: 10px;
 		display: block;
 		height: 20px;
@@ -166,6 +166,44 @@
 		width: 150px;
 
 	}
+/* Autocomplete*/
+#third-party .search div.autocomplete {
+	background-color: white;
+	border: 1px solid #dddddd;
+	display: none;
+	padding: 25px 10px 10px;
+	position: absolute;
+	z-index: 10;
+	
+}
+	#third-party .search div.autocomplete span.arrow{
+		background: transparent url(../img/search/autocomplete-arrow.png) no-repeat scroll 0 0;
+		display:block;
+		height:16px;
+		left:70px;
+		position:absolute;
+		top:-1px;
+		width: 32px;
+		z-index: 10;
+		
+	}
+	#third-party .search div.autocomplete li:first-child{border-bottom: 1px solid #dddddd;}
+
+	#third-party .search.home div.autocomplete{width: 654px;left: 35px;bottom: -122px;}
+	#third-party .search.global div.autocomplete{width: 548px;left: 0;bottom: -125px;}
+	
+	#third-party .search div.autocomplete a{
+		background: #FFF url('../img/search/magnify-glass-autocomplete.png') no-repeat scroll 5px center;
+		color: #0066ff;
+		display:block;
+		font: normal 12px Arial, sans-serif;
+		padding: 15px 10px 15px 25px;
+		text-decoration:none;
+		
+	}
+	#third-party .search div.autocomplete a:hover{background-color: #CCC;}
+
+/* Breadcrumbs */
 #third-party .breadcrumbs-container{
 	background: transparent url(../img/search/bread-crumbs-bg.png) repeat-x scroll 0 0;
 	height: 37px;
@@ -265,8 +303,6 @@
 
 /* Left Rail (Browse and Filter)
 -----------------------------------------------------*/
-#third-party
-
 #third-party .request-a-product{
 	background: #DDD url(../img/browse-filter/request-a-product.png) no-repeat scroll 0 0;
 	display: block;

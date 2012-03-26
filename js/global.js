@@ -10,6 +10,7 @@ $.extend(SIGMA.THIRD_PARTY.global, function() {
 			
 			this.colorboxSetup();
 			this.productModule();
+			this.searchAutocomplete();
 		},
 		
 		colorboxSetup: function() {
@@ -54,6 +55,20 @@ $.extend(SIGMA.THIRD_PARTY.global, function() {
 			} else {
 				o.addEventListener("click", f);
 			}
+		},
+		
+		searchAutocomplete: function() {
+
+			$("input", ".search").on("keyup", function() {
+				
+				var s = document.getElementById("main-search");
+				
+				if(s.value.length > 3) {
+					$(".autocomplete").fadeIn();
+				} else {
+					$(".autocomplete").fadeOut();
+				}
+			});
 		}
 	};
 	

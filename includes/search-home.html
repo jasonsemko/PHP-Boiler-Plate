@@ -4,12 +4,23 @@
     <section class="search home">
 
     	<form action="cart.php" method="post">
-    		<input type="text" placeholder="Enter search term or Product ID..." />		
+    		<input id="main-search" type="text" placeholder="Enter search term or Product ID..." />		
     		<input type="submit" name="some_name" value="" id="some_name">			
     	</form>
 
     	<p> Can’t find what you’re looking for?
-    		<a href="request.php">Request a Product</a>
+    		<a class="request" href="request.php">Request a Product</a>
     	</p>
 
+      <div class="autocomplete">
+        <span class="arrow"></span>
+        <ul>
+          <li>
+            <a href="search-results.php">Vancomycin</a>
+          </li> 
+          <li>
+            <a href="search-results-single.php">Vancomycin hydrochloride Streptomyces orientalis</a>
+          </li> 
+        </ul>
+      </div>
     </section>

@@ -29,10 +29,16 @@
 					<option value="7">Formula Weight ↓</option>				
 			</select>
 		</div>
-		<section class="products">
-			<?php require_once('includes/product.html'); 		?>
+		<section class="products" id="mechanisms-1">
+			<?php require('includes/product.html'); 		?>
 			<img src="img/antibiotics/products.png" alt="Products" />
 		</section>
+		
+		<section class="products alternative" id="mechanisms-2" style="display:none;">
+			<?php require ('includes/product.html'); 		?>
+			<img src="img/antibiotics/products-2.png" alt="Products" />
+		</section>
+		
 	</div><!--.col2-->
 	
 </div><!--#content-wrapper-->

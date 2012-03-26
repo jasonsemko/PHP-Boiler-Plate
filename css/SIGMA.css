@@ -49,6 +49,13 @@
 	width: 190px;
 
 }
+
+#third-party div.your-selections p.no-selections{
+	color: #666666;
+	display: none;
+	font: normal bold 11px Helvetica, Arial, sans-serif;
+	height: 22px;
+}
 #third-party div.your-selections ul.list .breadcrumbOriginalTextSearched{
 	font-weight: normal;
 }
@@ -81,7 +88,7 @@
 #third-party .WidgetBox div.RefinementDimensionText span.RefineDimensionTextResultText{
   line-height:12px;
   display: inline-block;
-  width: 147px;
+  width: 170px;
   *width:140px;
   vertical-align: middle;
   padding:2px 0;

@@ -2,9 +2,21 @@
 <section class="search global">
 
 	<form action="cart.php" method="post">
-		<input type="text" placeholder="Search Products..." />		
+		<input id="main-search" type="text" placeholder="Search Products..." />		
 		<input type="submit" name="some_name" value="" id="some_name">			
 	</form>
 	
-	<a href="request.php"></a>
+	<div class="autocomplete">
+    <span class="arrow"></span>
+    <ul>
+      <li>
+        <a href="search-results.php">Vancomycin</a>
+      </li> 
+      <li>
+        <a href="search-results-single.php">Vancomycin hydrochloride Streptomyces orientalis</a>
+      </li> 
+    </ul>
+  </div>
+	
+	<a class="request" href="request.php"></a>
 </section>

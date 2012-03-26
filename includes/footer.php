@@ -9,6 +9,7 @@
 		<script defer src="js/global.js"></script>
 		<script defer src="js/index.js"></script>
 		<script defer src="js/search-results.js"></script>
+		<script defer src="js/antibiotics.js"></script>
 			
 		<!--[if IE]> </div> <![endif]-->
 	</body>
