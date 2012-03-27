@@ -10,7 +10,8 @@
 		<script defer src="js/index.js"></script>
 		<script defer src="js/search-results.js"></script>
 		<script defer src="js/antibiotics.js"></script>
-			
+		<!--GLOBAL JS FILE GOES HERE (PRODUCTION)-->
+		
 		<!--[if IE]> </div> <![endif]-->
 	</body>
 </html>

@@ -7,7 +7,7 @@ $.extend(SIGMA.THIRD_PARTY.life_science, function() {
 	var methods = {
 		
 		setup: function() {
-			console.log("setup");
+			
 		}
 	};
 	

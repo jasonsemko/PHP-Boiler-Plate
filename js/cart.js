@@ -7,7 +7,7 @@ $.extend(SIGMA.THIRD_PARTY.cart, function() {
 	var methods = {
 		
 		setup: function() {
-			console.log("setup");
+			
 		}
 	};
 	

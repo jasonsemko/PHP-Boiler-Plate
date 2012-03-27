@@ -7,7 +7,7 @@ $.extend(SIGMA.THIRD_PARTY.product_detail, function() {
 	var methods = {
 		
 		setup: function() {
-			console.log("setup");
+			
 		}
 	};
 	

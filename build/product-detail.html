@@ -7,17 +7,10 @@
 		<title>Sigma Aldrich Prototype (3PP)</title>
 		
 		<!-- CSS -->
-		<link href="css/base.css" rel="stylesheet">	
-		<link href="css/plugins/colorbox.css" rel="stylesheet">	
-		<link href="css/global.css" rel="stylesheet">			
-		<link href="css/SIGMA.css" rel="stylesheet">			
 		
-		<link href="css/index.css" rel="stylesheet">
-		<link href="css/product-detail.css" rel="stylesheet">
-		<link href="css/antibiotics.css" rel="stylesheet">
-		<link href="css/request.css" rel="stylesheet">
-		<link href="css/life-science.css" rel="stylesheet">
-		<link href="css/search-results.css" rel="stylesheet">
+		<link href="css/global.css" rel="stylesheet">
+		
+		
 		
 		<script src="js/plugins/jquery-1.7.js"></script>
 		<script src="js/plugins/jquery.modernizr-2.5.3.js"></script>
@@ -35,25 +28,37 @@
 		<!--Header-->
 		<header>			
 			<div class="top middle">
-				<a class="cart" href="cart.php">CART (4)</a>
+				<a class="cart" href="cart.html">CART (4)</a>
 			</div>			
 			<div class="btm middle">
-				<a class="logo" href="home.php"></a>
+				<a class="logo" href="home.html"></a>
 			</div>			
 		</header><!--Search (Global Version)-->
 <section class="search global">
 
-	<form action="cart.php" method="post">
-		<input type="text" placeholder="Search Products..." />		
+	<form action="cart.html" method="post">
+		<input id="main-search" type="text" placeholder="Search Products..." />		
 		<input type="submit" name="some_name" value="" id="some_name">			
 	</form>
 	
-	<a href="request.php"></a>
+	<div class="autocomplete">
+    <span class="arrow"></span>
+    <ul>
+      <li>
+        <a href="search-results.html">Vancomycin</a>
+      </li> 
+      <li>
+        <a href="search-results-single.html">Vancomycin hydrochloride Streptomyces orientalis</a>
+      </li> 
+    </ul>
+  </div>
+	
+	<a class="request" href="request.html"></a>
 </section><!--BreadCrumbs-->
 <div class="breadcrumbs-container">
 	<div class="breadcrumbs">
-		<a class="store" href="home.php"></a>
-		<a class="section" href="life-science.php"></a>
+		<a class="store" href="home.html"></a>
+		<a class="section" href="life-science.html"></a>
 	</div>
 </div>
 
@@ -75,7 +80,7 @@
 				<input type="text" name="quantity" value="0" />
 				<input type="text" name="quantity" value="0" />	
 			</div>
-			<a class="cart-button" href="cart.php"></a>
+			<a class="cart-button" href="cart.html"></a>
 		</div><!--.pricing-->
 		
 		<img src="img/product-detail/properties.png" alt="Properties" />
@@ -94,9 +99,7 @@
 		
 		<!-- HUGE Scripts -->
 		<script defer src="js/global.js"></script>
-		<script defer src="js/index.js"></script>
-		<script defer src="js/search-results.js"></script>
-			
+		
 		<!--[if IE]> </div> <![endif]-->
 	</body>
 </html>

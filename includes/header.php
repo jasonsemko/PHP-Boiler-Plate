@@ -7,6 +7,9 @@
 		<title>Sigma Aldrich Prototype (3PP)</title>
 		
 		<!-- CSS -->
+		
+		<!--GLOBAL CSS FILE GOES HERE (PRODUCTION)-->
+		
 		<link href="css/base.css" rel="stylesheet">	
 		<link href="css/plugins/colorbox.css" rel="stylesheet">	
 		<link href="css/global.css" rel="stylesheet">			

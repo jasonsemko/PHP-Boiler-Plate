@@ -7,7 +7,7 @@ $.extend(SIGMA.THIRD_PARTY.request, function() {
 	var methods = {
 		
 		setup: function() {
-			console.log("setup");
+			
 		}
 	};
 	
