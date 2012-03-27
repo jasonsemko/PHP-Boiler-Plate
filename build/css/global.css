@@ -1,92 +1,908 @@
-#third-party #antibiotics .col1{background-color:#f4f3f0}#third-party #antibiotics .col1 div.inner{padding:10px}
-#third-party #antibiotics .col2 div.results-dropdown{background:transparent url(../img/antibiotics/results-dropdown-2.png) no-repeat scroll 0 0;display:block;height:22px;position:relative;width:740px}
-#third-party #antibiotics .col2 div.results-dropdown select{position:absolute;top:0;right:0}#third-party #antibiotics section.products .product{left:250px;top:53px}
-#third-party #antibiotics section.products.alternative{display:none}#third-party #antibiotics section.products.alternative .product{left:0;top:332px}
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}
-article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}
-ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}
-table{border-collapse:collapse;border-spacing:0}a{text-decoration:none}a:hover{text-decoration:underline}
-.noBorder{border:none!important}.noMargin{margin:0!important}.noPadding{padding:0!important}.noBullet{background:none!important;padding-left:0!important}
-.hidden{display:none!important;visibility:hidden}.rounded{-moz-border-radius:4px;-webkit-border-radius:4px;-khtml-border-radius:4px;border-radius:4px}
-.dropShadow{-moz-box-shadow:0 0 6px #888;-webkit-box-shadow:0 0 6px #888}.disabled{opacity:.6;-ms-filter:"alpha(opacity=60)";filter:alpha(opacity=60);cursor:default}
-.cf:before,.cf:after{content:"";display:table}.cf:after{clear:both}
-.cf{zoom:1}.middle{margin:0 auto}.results-sprite{background:transparent url('../img/browse-filter/results-sprite.png') no-repeat scroll 0 0}
-#third-party header{background:transparent url(../img/header/bg.png) repeat-x scroll 0 0;height:147px;margin-bottom:30px}
-#third-party header .top{background-image:url(../img/header/logo.png);height:35px;position:relative;width:990px}
-#third-party header .top a.cart{color:#FFF;font-family:Arial;font-size:10px;font-weight:bold;padding-left:20px;position:absolute;right:0;top:13px}
-#third-party header .btm{background-image:url(../img/header/3PP-logo.jpg);height:112px;position:relative;width:990px}
-#third-party header .btm a.logo{height:60px;left:0;position:absolute;top:22px;width:300px}#third-party footer{background:transparent url(../img/footer/bg.png) repeat-x scroll 0 0;height:591px}
-#third-party footer .top{background-image:url(../img/footer/need-assistance.png);height:305px;width:990px}
-#third-party footer .btm{background-image:url(../img/footer/footer-links.png);height:286px;width:990px}
-#overlay{padding:20px;position:relative}#overlay .properties-pricing img{float:left}#overlay img:first-child{margin-right:20px}
-#third-party .inputs{position:absolute}#overlay .inputs{right:96px;top:223px}#third-party .inputs input{border:1px solid #cac9c7;display:block;font-weight:bold;margin-bottom:13px;padding:4px 0;text-align:center;height:14px;width:30px}
-#third-party a.cart-button{display:block;height:30px;position:absolute;width:135px}#overlay a.cart-button{bottom:40px;right:37px}
-#third-party .search{background-image:url(../img/search/global-search.png);background-repeat:no-repeat;display:block;height:43px;margin:25px auto 25px;position:relative;width:990px}
-#third-party .search input{border:0;margin:0;position:absolute}#third-party .search input[type=text]{border:1px solid #d9d9d9;border-radius:5px;color:#403c36;font-size:16px;font-weight:bold;height:21px;padding:10px;width:548px;z-index:5}
-#third-party .search input[type=submit]{background-color:transparent;background-image:url(../img/search/magnify-glass.png);background-repeat:no-repeat;bottom:5px;cursor:pointer;display:block;height:27px;right:430px;width:23px;z-index:10}
-#third-party .search.global a.request{bottom:10px;display:block;height:20px;position:absolute;right:20px;width:150px}
-#third-party .search div.autocomplete{background-color:white;border:1px solid #ddd;display:none;padding:25px 10px 10px;position:absolute;z-index:10}
-#third-party .search div.autocomplete span.arrow{background:transparent url(../img/search/autocomplete-arrow.png) no-repeat scroll 0 0;display:block;height:16px;left:70px;position:absolute;top:-1px;width:32px;z-index:10}
-#third-party .search div.autocomplete li:first-child{border-bottom:1px solid #ddd}#third-party .search.home div.autocomplete{width:654px;left:35px;bottom:-122px}
-#third-party .search.global div.autocomplete{width:548px;left:0;bottom:-125px}#third-party .search div.autocomplete a{background:#FFF url('../img/search/magnify-glass-autocomplete.png') no-repeat scroll 5px center;color:#06f;display:block;font:normal 12px Arial,sans-serif;padding:15px 10px 15px 25px;text-decoration:none}
-#third-party .search div.autocomplete a:hover{background-color:#CCC}#third-party .breadcrumbs-container{background:transparent url(../img/search/bread-crumbs-bg.png) repeat-x scroll 0 0;height:37px}
-#third-party .breadcrumbs{background:transparent url(../img/search/breadcrumbs.png) no-repeat scroll 0 0;margin:0 auto;position:relative;height:37px;width:991px}
-#third-party .breadcrumbs a{display:block;position:absolute;height:17px;top:12px}#third-party .breadcrumbs a.store{left:0;width:105px}
-#third-party .breadcrumbs a.section{left:107px;width:82px}#third-party .product{background-color:#eaeae8;display:block;height:240px;position:absolute;text-align:center;width:240px}
-#third-party .product:hover{background-color:#d3d3cc;cursor:pointer}#third-party .product img{padding:5px 0}
-#third-party .product p{color:#333;font:bold 12px Arial,sans-serif;padding:1px 0}#third-party .product p.name{height:32px}
-#third-party .product a{background-image:url('../img/modules/quick-view.png');background-repeat:no-repeat;display:block;height:28px;margin:5px auto 0;text-indent:-9999em;width:123px}
-#third-party .product span{background:transparent url(../img/modules/preferred-product.png) no-repeat scroll 0 0;display:block;height:27px;left:15px;position:absolute;top:0;width:17px}
-#third-party .content-wrapper{width:990px}#third-party .col{display:block;float:left;margin-bottom:50px;position:relative}
-#third-party .col1.small{width:220px}#third-party .col2.small{width:240px}#third-party .col.large{width:740px}
-#third-party .col1.small{margin-right:25px}#third-party .col1.large{margin-right:10px}#third-party .page-title{margin-bottom:20px}
-#third-party .request-a-product{background:#DDD url(../img/browse-filter/request-a-product.png) no-repeat scroll 0 0;display:block;height:200px;position:relative;width:190px}
-#third-party .request-a-product a{bottom:0;left:0;width:180px}#third-party .home.search{background-image:url(../img/search/home-search.jpg);background-repeat:no-repeat;display:block;height:168px;margin:0 auto 50px;position:relative;width:990px}
-#third-party .home.search input[type=text]{left:34px;padding:15px;height:21px;top:64px;width:653px}#third-party .home.search input[type=submit]{bottom:64px;right:299px}
-#third-party .home.search p,#third-party .home.search a{font-family:Helvetica;font-size:12px;font-weight:bold}
-#third-party .home.search p{bottom:20px;color:#666;left:35px;position:absolute}#third-party .home.search a.request{border-bottom:1px solid #f6534c;color:#f82c24}
-#third-party .home.search a:hover{text-decoration:none}nav.col1 .life-science{background:#DDD url(../img/browse-filter/home-life-science.png) no-repeat scroll 0 0;display:block;height:45px;width:219px}
-nav.col1 .life-science:hover{background-position:0 -45px}#third-party section.products{position:relative;width:740px}
-#third-party #index section.products .product{left:2px;top:87px}#third-party #life-science section.products .product{left:250px;top:53px}
-#colorbox,#cboxOverlay,#cboxWrapper{position:absolute;top:0;left:0;z-index:9999}#cboxOverlay{position:fixed;width:100%;height:100%}
-#cboxMiddleLeft,#cboxBottomLeft{clear:left}#cboxContent{position:relative;border:10px solid #4a4849}
-#cboxLoadedContent{overflow:auto}#cboxTitle{margin:0}#cboxLoadingOverlay,#cboxLoadingGraphic{position:absolute;top:0;left:0;width:100%;height:100%}
-#cboxPrevious,#cboxNext,#cboxClose,#cboxSlideshow{cursor:pointer}.cboxPhoto{float:left;margin:auto;border:0;display:block}
-.cboxIframe{width:100%;height:100%;display:block;border:0}#cboxOverlay{background-color:#000}#cboxContent{background:#fff}
-.cboxIframe{background:#fff}#cboxError{padding:50px;border:1px solid #ccc}#cboxTitle{position:absolute;bottom:4px;left:0;text-align:center;width:100%;color:#949494}
-#cboxCurrent{position:absolute;bottom:4px;left:58px;color:#949494}#cboxSlideshow{position:absolute;bottom:4px;right:30px;color:#0092ef}
-#cboxPrevious{position:absolute;bottom:0;left:0;background:url(../../img/colorbox/images/controls.png) no-repeat -75px 0;width:25px;height:25px;text-indent:-9999px}
-#cboxPrevious:hover{background-position:-75px -25px}#cboxNext{position:absolute;bottom:0;left:27px;background:url(../../img/colorbox/images/controls.png) no-repeat -50px 0;width:25px;height:25px;text-indent:-9999px}
-#cboxNext:hover{background-position:-50px -25px}#cboxLoadingOverlay{background:url(../../img/colorbox/images/loading_background.png) no-repeat center center}
-#cboxLoadingGraphic{background:url(../../img/colorbox/images/loading.gif) no-repeat center center}#cboxClose{position:absolute;top:-25px;right:-25px;background:transparent url(../../img/overlay/close.png) no-repeat 0 0;width:29px;height:29px;text-indent:-9999px}
-#cboxClose:hover{background-position:0 -29px}.cboxIE #cboxTopLeft,.cboxIE #cboxTopCenter,.cboxIE #cboxTopRight,.cboxIE #cboxBottomLeft,.cboxIE #cboxBottomCenter,.cboxIE #cboxBottomRight,.cboxIE #cboxMiddleLeft,.cboxIE #cboxMiddleRight{filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)}
-.cboxIE6 #cboxTopLeft{background:url(../../img/colorbox/images/ie6/borderTopLeft.png)}.cboxIE6 #cboxTopCenter{background:url(../../img/colorbox/images/ie6/borderTopCenter.png)}
-.cboxIE6 #cboxTopRight{background:url(../../img/colorbox/images/ie6/borderTopRight.png)}.cboxIE6 #cboxBottomLeft{background:url(../../img/colorbox/images/ie6/borderBottomLeft.png)}
-.cboxIE6 #cboxBottomCenter{background:url(../../img/colorbox/images/ie6/borderBottomCenter.png)}.cboxIE6 #cboxBottomRight{background:url(../../img/colorbox/images/ie6/borderBottomRight.png)}
-.cboxIE6 #cboxMiddleLeft{background:url(../../img/colorbox/images/ie6/borderMiddleLeft.png)}.cboxIE6 #cboxMiddleRight{background:url(../../img/colorbox/images/ie6/borderMiddleRight.png)}
-.cboxIE6 #cboxTopLeft,.cboxIE6 #cboxTopCenter,.cboxIE6 #cboxTopRight,.cboxIE6 #cboxBottomLeft,.cboxIE6 #cboxBottomCenter,.cboxIE6 #cboxBottomRight,.cboxIE6 #cboxMiddleLeft,.cboxIE6 #cboxMiddleRight{_behavior:expression(this.src = this.src ? this.src:this.currentStyle.backgroundImage.split('"')[1],this.style.background = "none",this.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src="+this.src+", sizingMethod='scale')")}
-#third-party .product-hero{background:transparent url(../img/product-detail/hero-bg.png) repeat-x scroll 0 0;display:block;height:283px;margin-bottom:40px;text-align:center}
-#third-party #product-detail .pricing{background:transparent url(../img/product-detail/pricing.png) no-repeat scroll 0 0;display:block;height:400px;position:relative;width:740px}
-#third-party #product-detail .inputs{right:125px;top:130px}#third-party #product-detail a.cart-button{bottom:80px;right:70px}
-#third-party .top-border{background:transparent url(../img/request/top-border.png) repeat-x scroll 0 0;display:block;height:5px}
-#third-party #search-results .col1{background-color:#f4f3f0;margin-right:30px}#third-party #search-results .col1 div.inner{padding:15px}
-#third-party #search-results .results-dropdown{background:#DDD url(../img/search-results/exact-sort.png) no-repeat scroll 0 0;height:33px;position:relative;width:722px}
-#third-party #search-results .results-dropdown select{position:absolute;right:0;top:0}#third-party #search-results .exact-results-container{background:transparent url(../img/search-results/exact-results.png) no-repeat scroll 0 0;display:block;height:625px;position:relative;width:722px}
-#third-party #search-results .inputs.top{right:84px;top:225px}#third-party #search-results .inputs.bottom{bottom:80px;right:84px}
-#third-party #search-results .cart-button.exact{bottom:25px;right:0}#third-party #search-results .cart-button.generic{bottom:25px;right:47px}
-#third-party #search-results .inputs.single{right:102px;top:40px}#third-party #search-results .vancomycin div.vancomycin-top{background:transparent url(../img/search-results/vancomycin-top.png) no-repeat scroll 0 0;display:block;height:170px;position:relative}
-#third-party #search-results .vancomycin div.vancomycin-top a{bottom:25px;display:block;height:16px;position:absolute;right:17px;width:60px}
-#third-party #search-results .vancomycin div.vancomycin-top.expanded{background-position:0 -170px}#third-party #search-results .vancomycin div.pricing{background:transparent url(../img/search-results/pricing.png) no-repeat scroll 0 0;display:none;height:257px;position:relative}
-#third-party .remove-filter{background:transparent url('../img/browse-filter/remove-filter-icon.png') no-repeat scroll left 0;color:#665e58;display:block;height:12px;padding-bottom:2px;position:absolute;right:7px;top:3px;width:14px}
-#third-party p.headline{color:#403c36;font:bold 18px Arial,Helvetica,sans-serif;line-height:18px!important;margin-bottom:10px;text-transform:capitalize}
-#third-party p.selectedFilters{color:#403c36;font:bold 12px Arial,Helvetica,sans-serif;margin-bottom:5px}
-#third-party div.your-selections{margin:5px 0 20px;padding:5px 0;width:195px}#third-party div.your-selections ul.list li{background-color:#e6e6e6;color:#1d5293;font:bold 11px Arial,Helvetica,sans-serif;margin:2px 0;padding:4px 0 4px 5px;position:relative;width:190px}
-#third-party div.your-selections p.no-selections{color:#666;display:none;font:normal bold 11px Helvetica,Arial,sans-serif;height:22px}
-#third-party div.your-selections ul.list .breadcrumbOriginalTextSearched{font-weight:normal}#third-party .WidgetBox div.RefinementDimensionText{display:none;font:normal bold 11px Arial,sans-serif;font-weight:bold;font-size:11px;color:#1d5293;padding-left:10px;_height:auto}
-#third-party .WidgetBox div.RefinementDimensionText a{color:#1d5293;display:block;line-height:24px;padding-left:13px}
-#third-party .WidgetBox div.RefinementDimensionText input{margin:0 2px 0 0;display:inline-block;*display:inline;*zoom:1;vertical-align:middle;padding:2px 0}
-#third-party .WidgetBox div.RefinementDimensionText div{padding:5px 0}#third-party .WidgetBox div.RefinementDimensionText span.RefineDimensionTextResultText{line-height:12px;display:inline-block;width:170px;*width:140px;vertical-align:middle;padding:2px 0}
-#third-party .WidgetBox div.RefinementDimensionText span.RefineDimensionTextResultCount{color:#8c8784;padding-left:2px}
-#third-party .RefinementDimension{padding:10px 0;border-top:1px dotted #cacaca}#third-party .RefinementDimensionHeader{margin-bottom:8px}
-#third-party .RefinementDimension span.results-sprite{display:inline-block;*display:inline;*zoom:1;margin-right:5px;width:14px;height:14px;background-position:-88px -88px;vertical-align:middle}
-#third-party .RefinementDimension span.refinementDimensionHeaderText{display:inline-block;*display:inline;*zoom:1;cursor:pointer;color:#403c36;font:bold 11px Arial,Helvetica,sans-serif;line-height:13px;vertical-align:bottom}
+/** RESET **/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+margin:0;
+padding:0;
+border:0;
+font-size:100%;
+font:inherit;
+vertical-align:baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+display:block;
+}
+
+body {
+line-height:1;
+}
+
+ol,ul {
+list-style:none;
+}
+
+blockquote,q {
+quotes:none;
+}
+
+blockquote:before,blockquote:after,q:before,q:after {
+content:'';
+content:none;
+}
+
+table {
+border-collapse:collapse;
+border-spacing:0;
+}
+
+/* 
+ *	Helper Classes (Global)
+ */
+a {
+text-decoration:none;
+}
+
+a:hover {
+text-decoration:underline;
+}
+
+.noBorder {
+border:none!important;
+}
+
+.noMargin {
+margin:0!important;
+}
+
+.noPadding {
+padding:0!important;
+}
+
+.noBullet {
+background:none!important;
+padding-left:0!important;
+}
+
+.hidden {
+display:none!important;
+visibility:hidden;
+}
+
+.rounded {
+-moz-border-radius:4px;
+-webkit-border-radius:4px;
+-khtml-border-radius:4px;
+border-radius:4px;
+}
+
+.dropShadow {
+-moz-box-shadow:0 0 6px #888;
+/* for Firefox 3.5+ */
+-webkit-box-shadow:0 0 6px #888;
+/* for Safari and Chrome */
+/*filter: progid:DXImageTransform.Microsoft.Shadow(color='#666666', Direction=145, Strength=6);*/
+}
+
+.disabled {
+opacity:.6;
+-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+filter:alpha(opacity=60);
+cursor:default;
+}
+
+/* Contain floats - clearfix */
+.cf:before,.cf:after {
+content:"";
+display:table;
+}
+
+.cf:after {
+clear:both;
+}
+
+.cf {
+zoom:1;
+}
+
+/*** SIGMA THIRD PARTY PROCUREMENT ***/
+.middle {
+margin:0 auto;
+}
+
+.results-sprite {
+background:transparent url(../img/browse-filter/results-sprite.png) no-repeat scroll 0 0;
+}
+
+/* Header
+-----------------------------------------------------*/
+#third-party header {
+background:transparent url(../img/header/bg.png) repeat-x scroll 0 0;
+height:147px;
+margin-bottom:30px;
+}
+
+#third-party header .top {
+background-image:url(../img/header/logo.png);
+height:35px;
+position:relative;
+width:990px;
+}
+
+#third-party header .top a.cart {
+color:#FFF;
+font-family:Arial;
+font-size:10px;
+font-weight:700;
+padding-left:20px;
+position:absolute;
+right:0;
+top:13px;
+}
+
+#third-party header .btm {
+background-image:url(../img/header/3PP-logo.jpg);
+height:112px;
+position:relative;
+width:990px;
+}
+
+#third-party header .btm a.logo {
+height:60px;
+left:0;
+position:absolute;
+top:22px;
+width:300px;
+}
+
+/* Footer
+-----------------------------------------------------*/
+#third-party footer {
+background:transparent url(../img/footer/bg.png) repeat-x scroll 0 0;
+height:591px;
+}
+
+#third-party footer .top {
+background-image:url(../img/footer/need-assistance.png);
+height:305px;
+width:990px;
+}
+
+#third-party footer .btm {
+background-image:url(../img/footer/footer-links.png);
+height:286px;
+width:990px;
+}
+
+/* Overlays
+-----------------------------------------------------*/
+#overlay {
+padding:20px;
+position:relative;
+}
+
+#overlay .properties-pricing img {
+float:left;
+}
+
+#overlay img:first-child {
+margin-right:20px;
+}
+
+#third-party .inputs {
+position:absolute;
+}
+
+#overlay .inputs {
+right:96px;
+top:223px;
+}
+
+#third-party .inputs input {
+border:1px solid #cac9c7;
+display:block;
+font-weight:700;
+margin-bottom:13px;
+padding:4px 0;
+text-align:center;
+height:14px;
+width:30px;
+}
+
+#third-party a.cart-button {
+display:block;
+height:30px;
+position:absolute;
+width:135px;
+}
+
+#overlay a.cart-button {
+bottom:40px;
+right:37px;
+}
+
+/* Search / Breadcrumbs
+-----------------------------------------------------*/
+#third-party .search {
+background-image:url(../img/search/global-search.png);
+background-repeat:no-repeat;
+display:block;
+height:43px;
+margin:25px auto;
+position:relative;
+width:990px;
+}
+
+#third-party .search input {
+border:0;
+margin:0;
+position:absolute;
+}
+
+#third-party .search input[type=text] {
+border:1px solid #d9d9d9;
+border-radius:5px;
+color:#403C36;
+font-size:16px;
+font-weight:700;
+height:21px;
+padding:10px;
+width:548px;
+z-index:5;
+}
+
+#third-party .search input[type=submit] {
+background-color:transparent;
+background-image:url(../img/search/magnify-glass.png);
+background-repeat:no-repeat;
+bottom:5px;
+cursor:pointer;
+display:block;
+height:27px;
+right:430px;
+width:23px;
+z-index:10;
+}
+
+#third-party .search.global a.request {
+bottom:10px;
+display:block;
+height:20px;
+position:absolute;
+right:20px;
+width:150px;
+}
+
+/* Autocomplete*/
+#third-party .search div.autocomplete {
+background-color:#FFF;
+border:1px solid #DDD;
+display:none;
+padding:25px 10px 10px;
+position:absolute;
+z-index:10;
+}
+
+#third-party .search div.autocomplete span.arrow {
+background:transparent url(../img/search/autocomplete-arrow.png) no-repeat scroll 0 0;
+display:block;
+height:16px;
+left:70px;
+position:absolute;
+top:-1px;
+width:32px;
+z-index:10;
+}
+
+#third-party .search div.autocomplete li:first-child {
+border-bottom:1px solid #DDD;
+}
+
+#third-party .search.home div.autocomplete {
+width:654px;
+left:35px;
+bottom:-122px;
+}
+
+#third-party .search.global div.autocomplete {
+width:548px;
+left:0;
+bottom:-125px;
+}
+
+#third-party .search div.autocomplete a {
+background:#FFF url(../img/search/magnify-glass-autocomplete.png) no-repeat scroll 5px center;
+color:#06F;
+display:block;
+font:normal 12px Arial, sans-serif;
+padding:15px 10px 15px 25px;
+text-decoration:none;
+}
+
+#third-party .search div.autocomplete a:hover {
+background-color:#CCC;
+}
+
+/* Breadcrumbs */
+#third-party .breadcrumbs-container {
+background:transparent url(../img/search/bread-crumbs-bg.png) repeat-x scroll 0 0;
+height:37px;
+}
+
+#third-party .breadcrumbs {
+background:transparent url(../img/search/breadcrumbs.png) no-repeat scroll 0 0;
+margin:0 auto;
+position:relative;
+height:37px;
+width:991px;
+}
+
+#third-party .breadcrumbs.life {
+background-image:url(../img/search/breadcrumbs-lifescience.png);
+}
+
+#third-party .breadcrumbs.product {
+background-image:url(../img/search/breadcrumbs-product.png);
+}
+
+#third-party .breadcrumbs a {
+display:block;
+position:absolute;
+height:17px;
+top:12px;
+}
+
+#third-party .breadcrumbs a.store {
+left:0;
+width:105px;
+}
+
+#third-party .breadcrumbs a.section {
+left:107px;
+width:82px;
+}
+
+/* Product Module
+-----------------------------------------------------*/
+#third-party section.products .product {
+background-color:#eaeae8;
+display:block;
+height:240px;
+position:absolute;
+text-align:center;
+width:240px;
+}
+
+#third-party section.products .product:hover {
+background-color:#d3d3cc;
+cursor:pointer;
+}
+
+#third-party section.products .product img {
+padding:5px 0;
+}
+
+#third-party section.products .product p {
+color:#333;
+font:bold 12px Arial, sans-serif;
+padding:1px 0;
+}
+
+#third-party section.products .product p.name {
+height:32px;
+}
+
+#third-party section.products .product a {
+background-image:url(../img/modules/quick-view.png);
+background-repeat:no-repeat;
+display:block;
+height:28px;
+margin:5px auto 0;
+text-indent:-9999em;
+width:123px;
+}
+
+#third-party section.products .product span {
+background:transparent url(../img/modules/preferred-product.png) no-repeat scroll 0 0;
+display:block;
+height:27px;
+left:15px;
+position:absolute;
+top:0;
+width:17px;
+}
+
+/* Content Wrapper
+-----------------------------------------------------*/
+#third-party .content-wrapper {
+width:990px;
+}
+
+/* Two Column Layout
+-----------------------------------------------------*/
+#third-party .col {
+display:block;
+float:left;
+margin-bottom:50px;
+position:relative;
+}
+
+#third-party .col1.small {
+width:220px;
+}
+
+#third-party .col2.small {
+width:240px;
+}
+
+#third-party .col.large {
+width:740px;
+}
+
+#third-party .col1.small {
+margin-right:25px;
+}
+
+#third-party .col1.large {
+margin-right:10px;
+}
+
+#third-party .page-title {
+margin-bottom:20px;
+}
+
+/* Left Rail (Browse and Filter)
+-----------------------------------------------------*/
+#third-party .request-a-product {
+background:#DDD url(../img/browse-filter/request-a-product.png) no-repeat scroll 0 0;
+display:block;
+height:200px;
+position:relative;
+width:190px;
+}
+
+#third-party .request-a-product a {
+bottom:0;
+left:0;
+width:180px;
+}
+
+#third-party #antibiotics .col1 {
+background-color:#F4F3F0;
+}
+
+#third-party #antibiotics .col1 div.inner {
+padding:10px;
+}
+
+#third-party #antibiotics .col2 div.results-dropdown {
+background:transparent url(../img/antibiotics/results-dropdown-2.png) no-repeat scroll 0 0;
+display:block;
+height:22px;
+position:relative;
+width:740px;
+}
+
+#third-party #antibiotics .col2 div.results-dropdown select {
+position:absolute;
+top:0;
+right:0;
+}
+
+#third-party #antibiotics section.products .product {
+left:250px;
+top:53px;
+}
+
+#third-party #antibiotics section.products.alternative {
+display:none;
+}
+
+#third-party #antibiotics section.products.alternative .product {
+left:0;
+top:332px;
+}
+
+/** Index.html **/
+#third-party .home.search {
+background-image:url(../img/search/home-search.jpg);
+background-repeat:no-repeat;
+display:block;
+height:168px;
+margin:0 auto 50px;
+position:relative;
+width:990px;
+}
+
+#third-party .home.search input[type=text] {
+left:34px;
+padding:15px;
+height:21px;
+top:64px;
+width:653px;
+}
+
+#third-party .home.search input[type=submit] {
+bottom:64px;
+right:299px;
+}
+
+#third-party .home.search p,#third-party .home.search a {
+font-family:Helvetica;
+font-size:12px;
+font-weight:700;
+}
+
+#third-party .home.search p {
+bottom:20px;
+color:#666;
+left:35px;
+position:absolute;
+}
+
+#third-party .home.search a.request {
+border-bottom:1px solid #f6534c;
+color:#f82c24;
+}
+
+#third-party .home.search a:hover {
+text-decoration:none;
+}
+
+/* NAV
+-----------------------------------------------------*/
+nav.col1 .life-science {
+background:#DDD url(../img/browse-filter/home-life-science.png) no-repeat scroll 0 0;
+display:block;
+height:45px;
+width:219px;
+}
+
+nav.col1 .life-science:hover {
+background-position:0 -45px;
+}
+
+/* Products
+-----------------------------------------------------*/
+#third-party section.products {
+position:relative;
+width:740px;
+}
+
+#third-party #index section.products .product {
+left:2px;
+top:87px;
+}
+
+#third-party #life-science section.products .product {
+left:250px;
+top:53px;
+}
+
+#third-party .product-hero {
+background:transparent url(../img/product-detail/hero-bg.png) repeat-x scroll 0 0;
+display:block;
+height:283px;
+margin-bottom:40px;
+text-align:center;
+}
+
+#third-party #product-detail .pricing {
+background:transparent url(../img/product-detail/pricing.png) no-repeat scroll 0 0;
+display:block;
+height:400px;
+position:relative;
+width:740px;
+}
+
+#third-party #product-detail .inputs {
+right:125px;
+top:130px;
+}
+
+#third-party #product-detail a.cart-button {
+bottom:80px;
+right:70px;
+}
+
+#third-party .top-border {
+background:transparent url(../img/request/top-border.png) repeat-x scroll 0 0;
+display:block;
+height:5px;
+}
+
+#third-party #search-results .col1 {
+background-color:#F4F3F0;
+margin-right:30px;
+}
+
+#third-party #search-results .col1 div.inner {
+padding:15px;
+}
+
+#third-party #search-results .results-dropdown {
+background:#DDD url(../img/search-results/exact-sort.png) no-repeat scroll 0 0;
+height:33px;
+position:relative;
+width:722px;
+}
+
+#third-party #search-results .results-dropdown select {
+position:absolute;
+right:0;
+top:0;
+}
+
+#third-party #search-results .exact-results-container {
+background:transparent url(../img/search-results/exact-results.png) no-repeat scroll 0 0;
+display:block;
+height:625px;
+position:relative;
+width:722px;
+}
+
+/*PRICING INPUTS AND CART BUTTONS*/
+#third-party #search-results .inputs.top {
+right:84px;
+top:225px;
+}
+
+#third-party #search-results .inputs.bottom {
+bottom:80px;
+right:84px;
+}
+
+#third-party #search-results .cart-button.exact {
+bottom:25px;
+right:0;
+}
+
+#third-party #search-results .cart-button.generic {
+bottom:25px;
+right:47px;
+}
+
+#third-party #search-results .inputs.single {
+right:102px;
+top:40px;
+}
+
+#third-party #search-results .vancomycin div.vancomycin-top {
+background:transparent url(../img/search-results/vancomycin-top.png) no-repeat scroll 0 0;
+display:block;
+height:170px;
+position:relative;
+}
+
+#third-party #search-results .vancomycin div.vancomycin-top a {
+bottom:25px;
+display:block;
+height:16px;
+position:absolute;
+right:17px;
+width:60px;
+}
+
+#third-party #search-results .vancomycin div.vancomycin-top.expanded {
+background-position:0 -170px;
+}
+
+#third-party #search-results .vancomycin div.pricing {
+background:transparent url(../img/search-results/pricing.png) no-repeat scroll 0 0;
+display:none;
+height:257px;
+position:relative;
+}
+
+/* ========================== */
+/* = COPIED SIGMA CSS BELOW = */
+/* ========================== */
+/* ===================================== */
+/* = New CSS for redesign of left rail = */
+/* ===================================== */
+#third-party .remove-filter {
+background:transparent url(../img/browse-filter/remove-filter-icon.png) no-repeat scroll left 0;
+color:#665E58;
+display:block;
+height:12px;
+padding-bottom:2px;
+position:absolute;
+right:7px;
+top:3px;
+width:14px;
+}
+
+#third-party p.headline {
+color:#403C36;
+font:bold 18px Arial, Helvetica, sans-serif;
+line-height:18px!important;
+margin-bottom:10px;
+text-transform:capitalize;
+}
+
+#third-party p.selectedFilters {
+color:#403C36;
+font:bold 12px Arial, Helvetica, sans-serif;
+margin-bottom:5px;
+}
+
+#third-party div.your-selections {
+margin:5px 0 20px;
+padding:5px 0;
+width:195px;
+}
+
+#third-party div.your-selections ul.list li {
+background-color:#E6E6E6;
+color:#1D5293;
+font:bold 11px Arial, Helvetica, sans-serif;
+margin:2px 0;
+padding:4px 0 4px 5px;
+position:relative;
+width:190px;
+}
+
+#third-party div.your-selections p.no-selections {
+color:#666;
+display:none;
+font:normal bold 11px Helvetica, Arial, sans-serif;
+height:22px;
+}
+
+#third-party div.your-selections ul.list .breadcrumbOriginalTextSearched {
+font-weight:400;
+}
+
+#third-party .WidgetBox div.RefinementDimensionText {
+display:none;
+font:normal bold 11px Arial, sans-serif;
+font-weight:700;
+font-size:11px;
+color:#1d5293;
+padding-left:10px;
+}
+
+#third-party .WidgetBox div.RefinementDimensionText a {
+color:#1d5293;
+display:block;
+line-height:24px;
+padding-left:13px;
+}
+
+#third-party .WidgetBox div.RefinementDimensionText input {
+margin:0 2px 0 0;
+display:inline-block;
+vertical-align:middle;
+padding:2px 0;
+}
+
+#third-party .WidgetBox div.RefinementDimensionText div {
+padding:5px 0;
+}
+
+#third-party .WidgetBox div.RefinementDimensionText span.RefineDimensionTextResultText {
+line-height:12px;
+display:inline-block;
+width:170px;
+vertical-align:middle;
+padding:2px 0;
+}
+
+#third-party .WidgetBox div.RefinementDimensionText span.RefineDimensionTextResultCount {
+color:#8c8784;
+padding-left:2px;
+}
+
+#third-party .RefinementDimension {
+padding:10px 0;
+border-top:1px dotted #cacaca;
+}
+
+#third-party .RefinementDimensionHeader {
+margin-bottom:8px;
+}
+
+#third-party .RefinementDimension span.results-sprite {
+display:inline-block;
+margin-right:5px;
+width:14px;
+height:14px;
+background-position:-88px -88px;
+vertical-align:middle;
+}
+
+#third-party .RefinementDimension span.refinementDimensionHeaderText {
+display:inline-block;
+cursor:pointer;
+color:#403c36;
+font:bold 11px Arial, Helvetica, sans-serif;
+line-height:13px;
+vertical-align:bottom;
+}
+
+.ie6 #third-party .RefinementDimension span.refinementDimensionHeaderText,.ie7 #third-party .RefinementDimension span.refinementDimensionHeaderText,.ie6 #third-party .RefinementDimension span.refinementDimensionHeaderText,.ie7 #third-party .RefinementDimension span.refinementDimensionHeaderText,.ie6 #third-party .WidgetBox div.RefinementDimensionText input,.ie7 #third-party .WidgetBox div.RefinementDimensionText input {
+display:inline;
+zoom:1;
+}
+
+.ie6 #third-party .WidgetBox div.RefinementDimensionText span.RefineDimensionTextResultText,.ie7 #third-party .WidgetBox div.RefinementDimensionText span.RefineDimensionTextResultText {
+width:140px;
+}
+
+.ie6 #third-party .WidgetBox div.RefinementDimensionText {
+height:auto;
+}/*
+    ColorBox Core Style:
+    The following CSS is consistent between example themes and should not be altered.
+*/
+#colorbox, #cboxOverlay, #cboxWrapper{position:absolute; top:0; left:0; z-index:9999;}
+#cboxOverlay{position:fixed; width:100%; height:100%;}
+#cboxMiddleLeft, #cboxBottomLeft{clear:left;}
+#cboxContent{position:relative;border:10px solid #4a4849;}
+#cboxLoadedContent{overflow:auto;}
+#cboxTitle{margin:0;}
+#cboxLoadingOverlay, #cboxLoadingGraphic{position:absolute; top:0; left:0; width:100%; height:100%;}
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow{cursor:pointer;}
+.cboxPhoto{float:left; margin:auto; border:0; display:block;}
+.cboxIframe{width:100%; height:100%; display:block; border:0;}
+
+/* 
+    User Style:
+    Change the following styles to modify the appearance of ColorBox.  They are
+    ordered & tabbed in a way that represents the nesting of the generated HTML.
+*/
+#cboxOverlay{background-color: #000;}
+#colorbox{}
+    #cboxContent{background:#fff;}
+        .cboxIframe{background:#fff;}
+        #cboxError{padding:50px; border:1px solid #ccc;}
+        #cboxTitle{position:absolute; bottom:4px; left:0; text-align:center; width:100%; color:#949494;}
+        #cboxCurrent{position:absolute; bottom:4px; left:58px; color:#949494;}
+        #cboxSlideshow{position:absolute; bottom:4px; right:30px; color:#0092ef;}
+        #cboxPrevious{position:absolute; bottom:0; left:0; background:url(../../img/colorbox/images/controls.png) no-repeat -75px 0; width:25px; height:25px; text-indent:-9999px;}
+        #cboxPrevious:hover{background-position:-75px -25px;}
+        #cboxNext{position:absolute; bottom:0; left:27px; background:url(../../img/colorbox/images/controls.png) no-repeat -50px 0; width:25px; height:25px; text-indent:-9999px;}
+        #cboxNext:hover{background-position:-50px -25px;}
+        #cboxLoadingOverlay{background:url(../../img/colorbox/images/loading_background.png) no-repeat center center;}
+        #cboxLoadingGraphic{background:url(../../img/colorbox/images/loading.gif) no-repeat center center;}
+        #cboxClose{position:absolute; top:-25px; right:-25px; background: transparent url(../../img/overlay/close.png) no-repeat 0px 0px; width:29px; height:29px; text-indent:-9999px;}
+        #cboxClose:hover{background-position:0px -29px;}
+
+/*
+  The following fixes a problem where IE7 and IE8 replace a PNG's alpha transparency with a black fill
+  when an alpha filter (opacity change) is set on the element or ancestor element.  This style is not applied to or needed in IE9.
+  See: http://jacklmoore.com/notes/ie-transparency-problems/
+*/
+.cboxIE #cboxTopLeft,
+.cboxIE #cboxTopCenter,
+.cboxIE #cboxTopRight,
+.cboxIE #cboxBottomLeft,
+.cboxIE #cboxBottomCenter,
+.cboxIE #cboxBottomRight,
+.cboxIE #cboxMiddleLeft,
+.cboxIE #cboxMiddleRight {
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);
+}
+
+/*
+  The following provides PNG transparency support for IE6
+  Feel free to remove this and the /ie6/ directory if you have dropped IE6 support.
+*/
+.cboxIE6 #cboxTopLeft{background:url(../../img/colorbox/images/ie6/borderTopLeft.png);}
+.cboxIE6 #cboxTopCenter{background:url(../../img/colorbox/images/ie6/borderTopCenter.png);}
+.cboxIE6 #cboxTopRight{background:url(../../img/colorbox/images/ie6/borderTopRight.png);}
+.cboxIE6 #cboxBottomLeft{background:url(../../img/colorbox/images/ie6/borderBottomLeft.png);}
+.cboxIE6 #cboxBottomCenter{background:url(../../img/colorbox/images/ie6/borderBottomCenter.png);}
+.cboxIE6 #cboxBottomRight{background:url(../../img/colorbox/images/ie6/borderBottomRight.png);}
+.cboxIE6 #cboxMiddleLeft{background:url(../../img/colorbox/images/ie6/borderMiddleLeft.png);}
+.cboxIE6 #cboxMiddleRight{background:url(../../img/colorbox/images/ie6/borderMiddleRight.png);}
+
+.cboxIE6 #cboxTopLeft,
+.cboxIE6 #cboxTopCenter,
+.cboxIE6 #cboxTopRight,
+.cboxIE6 #cboxBottomLeft,
+.cboxIE6 #cboxBottomCenter,
+.cboxIE6 #cboxBottomRight,
+.cboxIE6 #cboxMiddleLeft,
+.cboxIE6 #cboxMiddleRight {
+    _behavior: expression(this.src = this.src ? this.src : this.currentStyle.backgroundImage.split('"')[1], this.style.background = "none", this.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src=" + this.src + ", sizingMethod='scale')");
+}

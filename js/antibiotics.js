@@ -7,27 +7,23 @@ $.extend(SIGMA.THIRD_PARTY.antibiotics, function() {
 	var methods = {
 		
 		setup: function() {
-			this.openFilters();
+			setTimeout(function() {
+				$(".mechanisms").each(function(index) {
+					$(this).trigger("click");
+				});
+				methods.openFilters();
+			}, 200);
 		},
 		
 		//For Prototype, initially open up first filters
 		openFilters: function() {
 			
-			var d	=	$.Deferred();
-			
-			d.done(function(){
-				$(".mechanisms").trigger("click");
-			}, this.updateContent);
-			
-			d.resolve();
-			
-			
+			this.updateContent();			
 		},
 		
 		updateContent: function() {
 			
 			$(".mechanisms").click(function(e) {
-
 				var one	= document.getElementById("mechanisms-1").style,
 					two	= document.getElementById("mechanisms-2").style,
 					ul  = document.getElementsByTagName("ul"),
@@ -58,7 +54,11 @@ $.extend(SIGMA.THIRD_PARTY.antibiotics, function() {
 				//Mock change the result count
 				for(i=0; max=div.length,i<max; i++) {
 					if(div[i].className === "results-dropdown") {
-						div[i].style.backgroundImage = div[i].style.backgroundImage === bg1 ? bg2 : bg1;
+						if(div[i].style.backgroundImage === "") {
+							div[i].style.backgroundImage = bg1;
+						}else{
+							div[i].style.backgroundImage = /results-dropdown-2/.test(div[i].style.backgroundImage) === true ? bg1 : bg2;	
+						}
 					}
 				}
 			});			

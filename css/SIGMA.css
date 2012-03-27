@@ -66,7 +66,6 @@
   font-size:11px;
   color:#1d5293;
   padding-left:10px;
-  _height:auto;
 }
 #third-party .WidgetBox div.RefinementDimensionText a{
 	color: #1d5293;
@@ -77,8 +76,6 @@
 #third-party .WidgetBox div.RefinementDimensionText input{
   margin:0 2px 0 0;
   display:inline-block;
-  *display:inline;
-  *zoom:1;
   vertical-align:middle;
   padding:2px 0;
 }
@@ -89,7 +86,6 @@
   line-height:12px;
   display: inline-block;
   width: 170px;
-  *width:140px;
   vertical-align: middle;
   padding:2px 0;
 }
@@ -106,8 +102,6 @@
 }
 #third-party .RefinementDimension span.results-sprite{
   display:inline-block;
-  *display:inline;
-  *zoom:1;
   margin-right:5px;
   width:14px;
   height:14px;
@@ -116,11 +110,28 @@
 }
 #third-party .RefinementDimension span.refinementDimensionHeaderText{
   display:inline-block;
-  *display:inline;
-  *zoom:1;
   cursor:pointer;
   color: #403c36;
 	font: bold 11px Arial, Helvetica, sans-serif;
   line-height:13px;
   vertical-align:bottom;
+}
+
+.ie6 #third-party .RefinementDimension span.refinementDimensionHeaderText,
+.ie7 #third-party .RefinementDimension span.refinementDimensionHeaderText,
+.ie6 #third-party .RefinementDimension span.refinementDimensionHeaderText,
+.ie7 #third-party .RefinementDimension span.refinementDimensionHeaderText,
+.ie6 #third-party .WidgetBox div.RefinementDimensionText input,
+.ie7 #third-party .WidgetBox div.RefinementDimensionText input{
+	display: inline;
+	zoom:1;
+}
+
+.ie6 #third-party .WidgetBox div.RefinementDimensionText span.RefineDimensionTextResultText,
+.ie7 #third-party .WidgetBox div.RefinementDimensionText span.RefineDimensionTextResultText{
+	width:140px;
+}
+
+.ie6 #third-party .WidgetBox div.RefinementDimensionText{
+	height: auto;
 }

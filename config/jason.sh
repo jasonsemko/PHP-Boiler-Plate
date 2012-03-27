@@ -5,6 +5,10 @@ JS="global.js"
 echo "==========RESET PERMISSIONS============"
 chmod -R 777 ./
 
+
+
+
+
 echo "==========CLEAR OUT BUILD FOLDER============"
 rm -R ./build/*
 
@@ -19,14 +23,37 @@ for URL in `find . -name "*.php" -depth 1`; do
 		rm ./build/$liza.html.tmp
 done
 
+
+
+
+
+
 echo "==========BEGIN CSS MINIFICATION============"
+
 mkdir ./build/css
+
+echo "First add the base (with reset) -> global, then append the rest"
+cat ./css/base.css >> ./build/css/$CSS.tmp
+cat ./css/global.css >> ./build/css/$CSS.tmp
+
+mv ./css/base.css ./css/base.bak
+mv ./css/global.css ./css/global.bak
+mv ./css/plugins/colorbox.css ./css/plugins/colorbox.bak
+
 for URL in `find ./css -name "*.css"`; do
 	echo "merging $URL"
-	cat $URL >> ./build/$CSS.tmp
+	cat $URL >> ./build/css/$CSS.tmp
 done
-java -jar ./config/yui/build/yui.jar --type css --line-break 100 ./build/$CSS.tmp > ./build/css/$CSS
-rm ./build/*.css.tmp
+
+mv ./css/base.bak ./css/base.css
+mv ./css/global.bak ./css/global.css
+
+csstidy ./build/css/$CSS.tmp --preserve_css=true --remove_bslash=false ./build/css/$CSS
+
+mv ./css/plugins/colorbox.bak ./css/plugins/colorbox.css
+cat ./css/plugins/colorbox.css >> ./build/css/$CSS
+
+rm ./build/css/*.css.tmp
 echo "==========END CSS MINIFICATION============"
 
 
@@ -53,6 +80,9 @@ echo "==========END JS MINIFICATION============"
 echo "==========MOVE OTHER ASSETS============"
 cp -R ./img ./build
 cp -R ./overlays ./build
+sed 's/.php/.html/g' ./build/overlays/product.html > ./build/overlays/product.html.tmp
+mv ./build/overlays/product.html.tmp ./build/overlays/product.html
+chmod -R 777 ./
 echo "DONE"
 
 #find - gets just the file names

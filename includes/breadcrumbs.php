@@ -1,10 +1,11 @@
+<?php
+  if(!isset($type)) {$type = "";}
+?>
+
 <!--BreadCrumbs-->
 <div class="breadcrumbs-container">
-	<div class="breadcrumbs">
+	<div class="breadcrumbs <?php echo $type;?>">
 		<a class="store" href="home.php"></a>
 		<a class="section" href="life-science.php"></a>
 	</div>
 </div>
-
-<!--TODO-->
-<!--I have to change the bg image for life science...there are only two, make two images-->

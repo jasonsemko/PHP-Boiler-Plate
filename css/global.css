@@ -216,6 +216,8 @@
 		height: 37px;
 		width: 991px;
 	}
+	#third-party .breadcrumbs.life{background-image: url(../img/search/breadcrumbs-lifescience.png);}
+	#third-party .breadcrumbs.product{background-image: url(../img/search/breadcrumbs-product.png);}
 		#third-party .breadcrumbs a{
 			display: block;
 			position: absolute;
@@ -230,7 +232,7 @@
 /* Product Module
 -----------------------------------------------------*/
 
-#third-party .product{
+#third-party section.products .product{
 	background-color: #eaeae8;
 	display: block;
 	height: 240px;
@@ -239,24 +241,24 @@
 	width: 240px;
 	
 }
-#third-party .product:hover{
+#third-party section.products .product:hover{
 	background-color: #d3d3cc;
 	cursor: pointer;
 }
-	#third-party .product img{
+	#third-party section.products .product img{
 		padding: 5px 0;
 		
 	}
-	#third-party .product p{
+	#third-party section.products .product p{
 		color: #333;
 		font: bold 12px Arial, sans-serif;
 		padding: 1px 0;
 		
 	}
-	#third-party .product p.name{
+	#third-party section.products .product p.name{
 		height: 32px;
 	}
-	#third-party .product a{
+	#third-party section.products .product a{
 		background-image: url('../img/modules/quick-view.png');
 		background-repeat: no-repeat;
 		display: block;
@@ -266,7 +268,7 @@
 		width: 123px;
 		
 	}
-	#third-party .product span{
+	#third-party section.products .product span{
 		background: transparent url(../img/modules/preferred-product.png) no-repeat scroll 0 0;
 		display: block;
 		height: 27px;

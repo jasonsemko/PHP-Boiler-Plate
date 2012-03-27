@@ -1,6 +1,6 @@
 <?php require_once('includes/header.php'); 		?>
 <?php require_once('includes/search.html'); 	?>
-<?php require_once('includes/breadcrumbs.html');?>	
+<?php require_once('includes/breadcrumbs.php');?>	
 
 <!--Page Container-->
 <div class="middle index cf content-wrapper" id="antibiotics">

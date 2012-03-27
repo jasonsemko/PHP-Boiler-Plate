@@ -1,11 +1,12 @@
 var SIGMA=SIGMA||{};SIGMA.THIRD_PARTY=SIGMA.THIRD_PARTY||{};SIGMA.THIRD_PARTY.antibiotics=SIGMA.THIRD_PARTY.antibiotics||{};
-$.extend(SIGMA.THIRD_PARTY.antibiotics,function(){var a={setup:function(){this.openFilters()},openFilters:function(){var b=$.Deferred();
-b.done(function(){$(".mechanisms").trigger("click")},this.updateContent);b.resolve()},updateContent:function(){$(".mechanisms").click(function(l){var k=document.getElementById("mechanisms-1").style,o=document.getElementById("mechanisms-2").style,m=document.getElementsByTagName("ul"),b=document.getElementsByTagName("div"),f='url("../img/antibiotics/results-dropdown.png")',d='url("../img/antibiotics/results-dropdown-2.png")',h,g,n;
+$.extend(SIGMA.THIRD_PARTY.antibiotics,function(){var a={setup:function(){setTimeout(function(){$(".mechanisms").each(function(b){$(this).trigger("click")
+});a.openFilters()},200)},openFilters:function(){this.updateContent()},updateContent:function(){$(".mechanisms").click(function(l){var k=document.getElementById("mechanisms-1").style,o=document.getElementById("mechanisms-2").style,m=document.getElementsByTagName("ul"),b=document.getElementsByTagName("div"),f='url("../img/antibiotics/results-dropdown.png")',d='url("../img/antibiotics/results-dropdown-2.png")',h,g,n;
 k.display=k.display==="none"?"block":"none";o.display=o.display==="none"?"block":"none";for(h=0;n=m.length,h<n;
 h++){if(m[h].className==="list"){m[h].style.display=m[h].style.display==="none"?"block":"none";var c=m[h].parentNode.childNodes;
 for(g=0;g<c.length;g++){if(c[g].className==="no-selections"){c[g].style.display=c[g].style.display==="block"?"none":"block"
-}}}}for(h=0;n=b.length,h<n;h++){if(b[h].className==="results-dropdown"){b[h].style.backgroundImage=b[h].style.backgroundImage===f?d:f
-}}})}};return{init:function(){a.setup()}}}.call(SIGMA.THIRD_PARTY));$(window).load(function(){SIGMA.THIRD_PARTY.antibiotics.init()
+}}}}for(h=0;n=b.length,h<n;h++){if(b[h].className==="results-dropdown"){if(b[h].style.backgroundImage===""){b[h].style.backgroundImage=f
+}else{b[h].style.backgroundImage=/results-dropdown-2/.test(b[h].style.backgroundImage)===true?f:d}}}})
+}};return{init:function(){a.setup()}}}.call(SIGMA.THIRD_PARTY));$(window).load(function(){SIGMA.THIRD_PARTY.antibiotics.init()
 });var SIGMA=SIGMA||{};SIGMA.THIRD_PARTY=SIGMA.THIRD_PARTY||{};SIGMA.THIRD_PARTY.cart=SIGMA.THIRD_PARTY.cart||{};
 $.extend(SIGMA.THIRD_PARTY.cart,function(){var a={setup:function(){}};return{init:function(){a.setup()
 }}}.call(SIGMA.THIRD_PARTY));$(window).load(function(){SIGMA.THIRD_PARTY.cart.init()});var SIGMA=SIGMA||{};

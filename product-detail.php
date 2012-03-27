@@ -1,6 +1,7 @@
 <?php require_once('includes/header.php'); 		?>
 <?php require_once('includes/search.html'); 	?>
-<?php require_once('includes/breadcrumbs.html');?>	
+<?php $type = "product";?>
+<?php require_once('includes/breadcrumbs.php');?>	
 
 <section class="product-hero">
 	<img src="img/product-detail/hero.png" alt="Hero" />

@@ -1,6 +1,7 @@
 <?php require_once('includes/header.php'); 		?>
 <?php require_once('includes/search.html'); 	?>
-<?php require_once('includes/breadcrumbs.html');?>	
+<?php $type = "life"?>
+<?php include('includes/breadcrumbs.php');?>	
 
 <!--Page Container-->
 <div class="middle index cf content-wrapper" id="life-science">
