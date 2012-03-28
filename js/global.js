@@ -31,29 +31,29 @@ $.extend(SIGMA.THIRD_PARTY.global, function() {
 					product = products[i];
 					link = product.attributes.title.nodeValue;
 					
-					this.fastClick(product, function(e) {
+					this.fastClick(product, function(e){
 						
 						var node;
-						
+
 						if($.browser.msie && $.browser.version <= 8) {
 							node = e.srcElement.nodeName;
 						} else {
 							node = e.target.nodeName;
 						}
-						
+
 						if(node !== "A") {
 							window.location.href = link;
-					 	}
+					 	}						
 					});
 				}
 			}			
 		},
 		
-		fastClick: function(o, f) {
+		fastClick: function(obj, func) {
 			if($.browser.msie && $.browser.version <= 8) {
-				o.attachEvent("onclick", f);
+				obj.attachEvent("onclick", func);
 			} else {
-				o.addEventListener("click", f);
+				obj.addEventListener("click", func, false);
 			}
 		},
 		

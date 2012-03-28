@@ -41,6 +41,6 @@
 				<a class="cart" href="cart.php">CART (4)</a>
 			</div>			
 			<div class="btm middle">
-				<a class="logo" href="home.php"></a>
+				<a class="logo" href="index.php"></a>
 			</div>			
 		</header>

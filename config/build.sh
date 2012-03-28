@@ -14,13 +14,13 @@ rm -R ./build/*
 
 for URL in `find . -name "*.php" -depth 1`; do
 		echo "Downloading $URL"
-		jason=${URL:2:${#URL}}
-		liza=${URL:2:${#URL}-6}
-		wget http://3pp.local/$jason -O./build/$liza.html.tmp
+		fullURL=${URL:2:${#URL}}
+		noExtensionURL=${URL:2:${#URL}-6}
+		wget http://3pp.local/$fullURL -O./build/$noExtensionURL.html.tmp
 		echo "Search and Replace for $URL..."
-		sed -e 's/.php/.html/g' -e '/<link/d' -e '/defer/d' -e "s/<!--GLOBAL JS FILE GOES HERE (PRODUCTION)-->/<script defer src=\"js\/$JS\"><\/script>/g" -e "s/<!--GLOBAL CSS FILE GOES HERE (PRODUCTION)-->/<link href=\"css\/$CSS\" rel=\"stylesheet\">/g" ./build/$liza.html.tmp > ./build/$liza.html
-		#tidy -config ./config/HTML_TIDY ./build/$liza.html.tidy > ./build/$liza.html
-		rm ./build/$liza.html.tmp
+		sed -e 's/.php/.html/g' -e '/<link/d' -e '/defer/d' -e "s/<!--GLOBAL JS FILE GOES HERE (PRODUCTION)-->/<script defer src=\"js\/$JS\"><\/script>/g" -e "s/<!--GLOBAL CSS FILE GOES HERE (PRODUCTION)-->/<link href=\"css\/$CSS\" rel=\"stylesheet\">/g" ./build/$noExtensionURL.html.tmp > ./build/$noExtensionURL.html
+		#tidy -config ./config/HTML_TIDY ./build/$noExtensionURL.html.tidy > ./build/$noExtensionURL.html
+		rm ./build/$noExtensionURL.html.tmp
 done
 
 
@@ -76,14 +76,20 @@ echo "==========END JS MINIFICATION============"
 
 
 
-
 echo "==========MOVE OTHER ASSETS============"
 cp -R ./img ./build
 cp -R ./overlays ./build
 sed 's/.php/.html/g' ./build/overlays/product.html > ./build/overlays/product.html.tmp
 mv ./build/overlays/product.html.tmp ./build/overlays/product.html
 chmod -R 777 ./
-echo "DONE"
+echo "DONE...lets SSH IN"
+
+# mv ./build ./3pp
+# scp -r ./3pp/ saldrich@proto.hugeinc.com:/home/saldrich/
+# mv ./3pp ./build
+
+echo "==========ZIP IT UP!============"
+zip -r 3PP.zip ./build/
 
 #find - gets just the file names
 #grep - goes through the files itself and returns whatever you're looking for

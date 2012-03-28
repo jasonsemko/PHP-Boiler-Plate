@@ -35,7 +35,7 @@
 	height: 170px;
 	position:relative;
 }
-	#third-party #search-results .vancomycin div.vancomycin-top a{
+	#third-party #search-results #pricing-expand-collapse{
 		bottom: 25px;
 		display: block;
 		height: 16px;
@@ -43,6 +43,14 @@
 		right: 17px;
 		width: 60px;
 	}
+		#third-party #search-results #link-to-product{
+			bottom: 15px;
+			display: block;
+			height: 26px;
+			position: absolute;
+			left: 17px;
+			width: 510px;
+		}
 #third-party #search-results .vancomycin div.vancomycin-top.expanded{
 	background-position:0 -170px;
 }

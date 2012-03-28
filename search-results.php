@@ -33,6 +33,7 @@
 		<div class="vancomycin">
 			<div class="vancomycin-top collapsed">
 				<a href="#" id="pricing-expand-collapse"></a>
+				<a href="product-detail.php" id="link-to-product"></a>
 			</div>
 			<div class="pricing">
 				<div class="inputs single">

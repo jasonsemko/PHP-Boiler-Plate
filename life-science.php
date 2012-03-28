@@ -38,8 +38,6 @@
           <span class="refinementDimensionHeaderText"><strong>Techniques</strong></span><br>
         </div>
         <div class="RefinementDimensionText">
-          <a href="antibiotics.php">Lorem</a>
-      	  <a href="antibiotics.php">Ipsum</a>
       	  <a href="antibiotics.php">Chemical</a>
       	  <a href="antibiotics.php">Biological</a>
       	  <a href="antibiotics.php">Physical</a>

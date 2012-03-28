@@ -1,6 +1,6 @@
 var SIGMA=SIGMA||{};SIGMA.THIRD_PARTY=SIGMA.THIRD_PARTY||{};SIGMA.THIRD_PARTY.antibiotics=SIGMA.THIRD_PARTY.antibiotics||{};
 $.extend(SIGMA.THIRD_PARTY.antibiotics,function(){var a={setup:function(){setTimeout(function(){$(".mechanisms").each(function(b){$(this).trigger("click")
-});a.openFilters()},200)},openFilters:function(){this.updateContent()},updateContent:function(){$(".mechanisms").click(function(l){var k=document.getElementById("mechanisms-1").style,o=document.getElementById("mechanisms-2").style,m=document.getElementsByTagName("ul"),b=document.getElementsByTagName("div"),f='url("../img/antibiotics/results-dropdown.png")',d='url("../img/antibiotics/results-dropdown-2.png")',h,g,n;
+});a.openFilters()},200)},openFilters:function(){this.updateContent()},updateContent:function(){$(".mechanisms").click(function(l){var k=document.getElementById("mechanisms-1").style,o=document.getElementById("mechanisms-2").style,m=document.getElementsByTagName("ul"),b=document.getElementsByTagName("div"),f='url("img/antibiotics/results-dropdown.png")',d='url("img/antibiotics/results-dropdown-2.png")',h,g,n;
 k.display=k.display==="none"?"block":"none";o.display=o.display==="none"?"block":"none";for(h=0;n=m.length,h<n;
 h++){if(m[h].className==="list"){m[h].style.display=m[h].style.display==="none"?"block":"none";var c=m[h].parentNode.childNodes;
 for(g=0;g<c.length;g++){if(c[g].className==="no-selections"){c[g].style.display=c[g].style.display==="block"?"none":"block"
@@ -15,7 +15,7 @@ this.productModule();this.searchAutocomplete()},colorboxSetup:function(){$("a.co
 },productModule:function(){var f=document.getElementsByTagName("div"),c,b,d,e;for(c=0;b=f.length,c<b;
 c++){if(f[c].className==="product"){e=f[c];d=e.attributes.title.nodeValue;this.fastClick(e,function(h){var g;
 if($.browser.msie&&$.browser.version<=8){g=h.srcElement.nodeName}else{g=h.target.nodeName}if(g!=="A"){window.location.href=d
-}})}}},fastClick:function(c,b){if($.browser.msie&&$.browser.version<=8){c.attachEvent("onclick",b)}else{c.addEventListener("click",b)
+}})}}},fastClick:function(c,b){if($.browser.msie&&$.browser.version<=8){c.attachEvent("onclick",b)}else{c.addEventListener("click",b,false)
 }},searchAutocomplete:function(){$("input",".search").on("keyup",function(){var b=document.getElementById("main-search");
 if(b.value.length>3){$(".autocomplete").fadeIn()}else{$(".autocomplete").fadeOut()}})}};return{init:function(){a.setup()
 },fastClick:function(c,b){a.fastClick(c,b)}}}.call(SIGMA.THIRD_PARTY));$(window).load(function(){SIGMA.THIRD_PARTY.global.init()

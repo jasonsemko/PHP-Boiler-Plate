@@ -28,8 +28,8 @@ $.extend(SIGMA.THIRD_PARTY.antibiotics, function() {
 					two	= document.getElementById("mechanisms-2").style,
 					ul  = document.getElementsByTagName("ul"),
 					div = document.getElementsByTagName("div"),
-					bg1 = 'url("../img/antibiotics/results-dropdown.png")',
-					bg2 = 'url("../img/antibiotics/results-dropdown-2.png")',
+					bg1 = 'url("img/antibiotics/results-dropdown.png")',
+					bg2 = 'url("img/antibiotics/results-dropdown-2.png")',
 					i, j, max;
 					
 				

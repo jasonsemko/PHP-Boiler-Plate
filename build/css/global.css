@@ -361,6 +361,11 @@ left:107px;
 width:82px;
 }
 
+#third-party .breadcrumbs a.product-breadcrumb {
+left:200px;
+width:60px;
+}
+
 /* Product Module
 -----------------------------------------------------*/
 #third-party section.products .product {
@@ -504,7 +509,7 @@ top:332px;
 
 /** Index.html **/
 #third-party .home.search {
-background-image:url(../img/search/home-search.jpg);
+background-image:url(../img/search/home-search.png);
 background-repeat:no-repeat;
 display:block;
 height:168px;
@@ -673,13 +678,22 @@ height:170px;
 position:relative;
 }
 
-#third-party #search-results .vancomycin div.vancomycin-top a {
+#third-party #search-results #pricing-expand-collapse {
 bottom:25px;
 display:block;
 height:16px;
 position:absolute;
 right:17px;
 width:60px;
+}
+
+#third-party #search-results #link-to-product {
+bottom:15px;
+display:block;
+height:26px;
+position:absolute;
+left:17px;
+width:510px;
 }
 
 #third-party #search-results .vancomycin div.vancomycin-top.expanded {
@@ -693,12 +707,6 @@ height:257px;
 position:relative;
 }
 
-/* ========================== */
-/* = COPIED SIGMA CSS BELOW = */
-/* ========================== */
-/* ===================================== */
-/* = New CSS for redesign of left rail = */
-/* ===================================== */
 #third-party .remove-filter {
 background:transparent url(../img/browse-filter/remove-filter-icon.png) no-repeat scroll left 0;
 color:#665E58;
@@ -782,7 +790,7 @@ padding:5px 0;
 #third-party .WidgetBox div.RefinementDimensionText span.RefineDimensionTextResultText {
 line-height:12px;
 display:inline-block;
-width:170px;
+width:160px;
 vertical-align:middle;
 padding:2px 0;
 }
