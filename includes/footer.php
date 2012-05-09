@@ -12,6 +12,6 @@
 		<script defer src="js/antibiotics.js"></script>
 		<!--GLOBAL JS FILE GOES HERE (PRODUCTION)-->
 		
-		<!--[if IE]> </div> <![endif]-->
+		</div><!--[if IE]> #pageWrapper <![endif]-->
 	</body>
 </html>

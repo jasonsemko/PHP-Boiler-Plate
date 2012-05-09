@@ -1,10 +1,21 @@
-new-blocklevel-tags: header, section, nav, footer
+new-blocklevel-tags: header,section, nav, footer
 show-errors: 0
 show-warnings: 0
-quiet: 1
-wrap: 0
-indent: 1
-indent-spaces: 2
-sort-attributes: alpha
-tidy-mark: yes
-wrap-attributes: no
+wrap:0
+indent:1
+indent-spaces:2
+sort-attributes:alpha
+tidy-mark:yes
+wrap-attributes:no
+tab-size:3
+anchor-as-name:no
+drop-empty-paras:no
+drop-empty-elements:no
+fix-backslash:no
+fix-uri:no
+join-styles:no
+preserve-entities:yes
+quote-ampersand:no
+quote-nbsp:no
+output-html: true
+quiet:yes

@@ -1,0 +1,549 @@
+<script src="js/plugins/jquery-1.7.js"></script>
+
+
+<style type="text/css" media="screen">
+  
+  h1,h2,h3,h4{
+    font-family: Arial;
+    color: #333;
+  }
+  
+  /*Basics*/
+  img{margin:15px 0;}
+  
+  
+  /* Contain floats - clearfix */ 
+  .cf:before, .cf:after { content: ""; display: table; }
+  .cf:after { clear: both; }
+  .cf { zoom: 1; }
+  .left{float:left;}
+  
+  /*Headers*/
+  h1{margin:50px 0 100px;}
+  h2.section{font-size:50px;margin:100px 0 30px 0;}
+  h3,h4{margin:0;padding:0;}
+  h3{font-size:30px;margin:25px 0;display:block;}
+  .headline{font-size:20px;font-weight:bold;}
+  
+  /*Status*/
+  .not-tested{font-weight:bold;color:red;}
+  .havent-done{color:purple;font-weight:bold;}
+  .incomplete{color:orange;font-weight:bold;}
+  
+  /*Table*/
+  table{margin:15px 0;}
+  td:last-child{width:700px;}
+  td{padding:10px;}
+
+  /*Colors*/
+  .red{color: red;}
+  .green{color: green;}
+  .lightblue{color:lightblue;}
+  
+  /*Content*/
+  #page-content{
+    margin: 0 auto;
+    width: 960px;
+  }
+  a.top{
+    display:block;
+    background-color:#d7efff;
+    margin: 15px 0;
+    text-align: center;
+    font-weight: bold;
+  }
+  a.top:hover{
+    background-color: #ffdebd;
+  }
+  a{
+    color: #125581;
+    text-decoration: none;
+  }
+  a:hover{
+    color: #f1a900;
+    text-decoration: underline;
+  }
+  #table-of-contents h3{
+    font-size: 18px;
+    margin:0;
+  }
+  #quick-start-button{
+    background-image: url(img/shortversion.jpg);
+    display: block;
+    height: 450px;
+    width: 480px;
+  }
+  
+  .terminal{
+    margin: 30px 0;
+    padding: 20px;
+  }
+  .terminal pre{
+    background-color: #ffdebd;
+    padding: 10px 0 0px;
+  }
+  
+</style>
+
+<div style="position:fixed;top:0;right:0;background-color:yellow;opacity:.5;">
+  <p>Normal Text</p>
+  <p class="not-tested">Not Tested</p>
+  <p class="havent-done">Haven't done</p>
+  <p class="incomplete">Incomplete</p>
+</div>
+
+<div id="page-content">  
+  
+  <h1 style="text-align:center;font-size:70px;">Boiler Plate Plus+PHP</h1>
+
+  <div class="container cf">  
+    <div class="left" style="width:400px;">
+      <h2>Table of Contents</h2>
+
+      <ul id="table-of-contents">
+        <li><a href="#intro">Introduction</a></li>
+        <li><a href="#philosophy">Philosophy/Principles</a></li>
+        <li><a href="#includes">What's included</a></li>
+        <li>
+          <h3>BUILD</h3>    
+          <ul>
+            <li><a href="#build-intro">Intro</a></li>
+            <li><a href="#build-requirements">Requirements</a></li>
+            <li><a href="#build-config">Config</a></li>
+            <li><a href="#build-howto">Build Test</a></li>
+          </ul>
+        </li>
+        <li>
+          <h3>PHP</h3>
+          <ul>
+            <li><a href="#php-intro">PHP Intro</a></li>
+            <li><a href="#php-includes">PHP Includes</a></li>
+            <li><a href="#php-variables">PHP Variables</a></li>
+            <li><a href="#php-variables-includes">PHP Parameters in included files</a></li>
+          </ul>
+        </li>
+        <li>
+          <h3>BEST PRACTICES</h3>
+          <ul> 
+            <li>
+              <h4>HTML</h4>
+              <ul>
+                <li><a href="#html-formatting">Formatting</a></li>
+                <li><a href="#html-best-practices">Best Practices</a></li>
+              </ul>
+            </li> 
+            <li>
+              <h4>CSS</h4>
+              <ul>
+                <li><a href="#css-best-practices">Best Practices</a></li>
+              </ul>
+            </li> 
+            <li>
+              <h4>JS</h4>
+              <ul>
+                <li><a href="#js-best-practices">Best Practices</a></li>
+                <li><a href="#js-module-pattern">Module Pattern</a></li>
+                <li><a href="#js-vs-jquery">Native or Jquery?</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    
+    <a class="left" id="quick-start-button" href="#quick-start"></a>
+  </div>
+
+  <br /><br /><br /><br /><br /><br /><br />
+
+  <!--INTRO  INTRO  INTRO  INTRO  INTRO  INTRO  INTRO  INTRO  INTRO  INTRO  INTRO  INTRO  INTRO  INTRO  INTRO  INTRO -->
+  <h2 class="section">INTRODUCTION</h2>	
+
+
+  <!--INTRO-->
+  <div id="intro">
+    <p class="headline">Introduction</p>
+    Hey everyone! Thanks for downloading Boiler Plate Plus+PHP. In here you'll find pretty much all you'll need for your next project. If you're unfamiliar with boiler plates and how they work I suggest you read from top to bottom. If you are familiar with boiler plates take some time to read up on the best practices.  Enjoy!
+    <a class="top" href="#">TOP</a>
+  </div>
+  
+  
+  <!--PHILOSOPHY-->
+  <div id="philosophy">
+    <p class="headline">Philosophy</p>
+    The following are some badass tips I've read and learned from other programmers that help you get things done right the FIRST time and done in a much more efficient way! I highly recommend printing out the following list and placing it on your desk or wall as a reminder during the project...as we all know it's very easy to slip into autopilot when the deadline is coming up soon, but trust me on this, these best practices will help you get things done faster, smarter, and with cleaner code!
+    <a class="top" href="#">TOP</a>
+  </div>
+
+
+  <!--INCLUDES-->
+  <div id="includes">
+    <p class="headline">What's included</p>
+      Here's a list of what's included in this boiler plate with a description
+      <table border="1" cellspacing="1" cellpadding="1">
+        <tr>
+          <th>File Name</th>
+          <th>Description</th>
+        </tr>
+      
+        <tr>
+          <td>makefile</td>
+          <td>This make file runs when a user types <pre>make</pre> into the command line while in the base directory. Take a look at the make file and you'll see there are other options. (dev, staging, zip). Although you can simply run a make, there is an option to be more specific and send in an argument such as <pre>make zip</pre> or <pre>make staging</pre>Current options are <strong>dev staging zip build</strong><br />In dev and staging a build folder will be recreated. When selecting build, there will be no interaction with the server. </td>
+        </tr>
+      
+        <tr>
+          <td>index.php</td>
+          <td>
+            Index.php should be used as a simple template. It includes the base requirements for a php page in this boilerplate to run efficiently. Note the variables at the top. 
+            <pre>
+          $body_ID = "bodyID";
+          $JS_Files = "file1.js file2.js file3.js";
+          $CSS_Files = "file1.css file2.css";
+            </pre>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>config.ini</td>
+          <td>This file should be the only configuration file edited. It contains the main settings for the creation of a build and a deployment.</td>
+        </tr>
+      
+        <tr>
+          <td>deploy.pl | prompt.pl</td>
+          <td>Deploy and Prompt are two Perl scripts that help create a build or a deploy. They should not be edited unless you understand Perl. In order for these scripts to run efficiently, you will need Perl installed (comes on MAC OSX) and an extra module called Config::Simple. To get this mod please see the <a href="#requirements">requirements</a> section.</td>
+        </tr>
+      
+        <tr>
+          <td>base.css</td>
+          <td>This file contains an HTML5 reset as well as some great base classes. This file should be the first css file run for each page load.</td>
+        </tr>
+      
+        <tr>
+          <td>global.css|js</td>
+          <td>The global css file is blank and should be treated as a css file that will appear on every page. To see more about formatting and best css practices, checkout the <a href="#css-philosophy">CSS</a> section of this document. The global js file is NOT blank and contains a defined structure known as the 
+            <a href="http://www.codeproject.com/Articles/247241/Javascript-Module-Pattern">Module Pattern</a>. 
+            This helps keep code from clashing. To read more about Javascript formatting and best practices please read the <a href="#js-philosophy">Javascript</a> section.</td>
+        </tr>
+      
+        <tr>
+          <td>img directory</td>
+          <td>An img directory is included for storing images. During a build, this entire folder will be copied over with no (for now) compression. For best practices, there is a global directory which should contain images used on multiple pages. For images used on a single page, make a directory named after the page name. For example, stats.php should have an image folder at ./img/stats/</td>
+        </tr>
+      
+        <tr>
+          <td>overlays directory | colorbox</td>
+          <td>Included is an overlays directory. This directory should hold all of the html (no php yet) files that will be used by the colorbox plugin.</td>
+        </tr>
+      
+        <tr>
+          <td>includes directory</td>
+          <td>The includes directory should hold all of the php included files such as header and footer.</td>
+        </tr>
+      
+        <tr>
+          <td>plugins directory</td>
+          <td>Inside the js and css directory are directories named plugins. These directories will hold downloaded files (plugins) to help your project. The css plugins directory comes with the latest <pre>colorbox.css</pre> while the js plugins directory comes with the latest <pre>jquery | colorbox.js | jquery.cycle.all.js | jquery.modernizr-x.x.x.js</pre></td>
+        </tr>
+      </table>
+    <a class="top" href="#">TOP</a>
+  </div>
+
+
+  <!--BUILD  BUILD  BUILD  BUILD  BUILD  BUILD  BUILD  BUILD  BUILD  BUILD  BUILD  BUILD  BUILD  BUILD  BUILD  BUILD -->
+  <h2 class="section">BUILD</h2>
+
+  <!--BUILD INTRO-->
+  <div id="build-intro">
+    <p class="headline">Build Intro</p>
+    Boiler Plate Plus+ contains a couple of build scripts that help you do many things such as:
+      <ul>
+        <li>Create a zip archive</li>
+        <li>Deploy to Dev or Staging</li>
+        <li>Create a build</li>
+        <li>Minify CSS | JS</li>      
+      </ul>
+    <a class="top" href="#">TOP</a>
+  </div>
+
+  <!--BUILD REQUIREMENTS-->
+  <div id="build-requirements">
+    <p class="headline">Build Requirements</p>
+    In order to run these builds you'll need to have the following:
+    <br />
+    <table border="1" cellspacing="1" cellpadding="1">
+      <tr>
+        <th>Requirement</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>Web Server</td>
+        <td>You will need a running Web Server in order for the build script to run the following commands:<pre>make staging | make dev</pre>
+    Note that the only action the makefile can take without a Web Server is <pre>make zip</pre>
+        </td>      
+      </tr>
+    
+      <tr>
+        <td>Perl</td>
+        <td>This build uses <a href="http://www.perl.org/">Perl</a> to execute. You do not need to know Perl to run a build, but you must have it installed. If you are running Mac OSX Perl should already be installed. To check run the following in the <a href="http://en.wikipedia.org/wiki/Terminal_(OS_X)">Terminal:</a><pre>perl -v</pre></td>
+      </tr>
+    
+      <tr>
+        <td>Config::Simple Module (Perl)</td>
+        <td class="not-tested">The simple config is a module used by Perl which lets the build script use the Configuration file (config.ini). This module is not installed by default, but is rather easy to install. Use the following commands to install Config::Simple</td>
+      </tr>
+    </table>
+    <a class="top" href="#">TOP</a>
+  </div>
+
+  <!--BUILD CONFIG-->
+  <div id="build-config">
+    <p class="headline">Build Config</p>
+    Boiler Plate Plus+ comes with a configuration file called config.ini which lets important variables be set to a users preference. This is the layout with descriptions of each listed with the defaults:
+    <pre>
+  [GLOBAL]
+  perms = "755"                           ;The permissions given to the build directory
+  dev = "dev-server"                      ;Address of the dev server
+  staging = "staging"                     ;Address of the staging server
+  assets = "img overlays"                 ;List of assets that need to be transferred over (excludes js, css, php)
+  build_folder_name = "build"             ;Name of the build folder
+  web_address = "http://yoursite.local/"  ;Virtual Host name for project
+
+  [CSS]
+  min_name = "global.min.css"             ;Name for minified css file
+  order = "base global"                   ;Order css files need to be appended to minified file 
+                                          ;(Only list files that need to be in a particular order...
+                                          ;ones left out will be appended normally)
+
+  [JS]
+  min_name = "global.min.js"              ;Name of minified JS file
+
+  [ZIP]
+  name = "myproject"                      ;Name of zip generated by build script
+  append_timestamp = true                 ;Append a timestamp to the zip?
+    </pre>
+    <a class="top" href="#">TOP</a>
+  </div>
+
+  <!--BUILD TEST-->
+  <div id="build-intro" class="havent-done">
+    <p class="headline ">Build Test</p>
+    Since Boiler Plate Plus+, as many other downloads, require a few files in place, you can run a quick test and make sure you're up to speed and ready to go so you get no surprises later on! Go ahead and run the following command and read the output:
+    <pre>
+      make test
+    </pre>
+    <a class="top" href="#">TOP</a>
+  </div>
+
+
+  <!--PHP  PHP  PHP  PHP  PHP  PHP  PHP  PHP  PHP  PHP  PHP  PHP  PHP  PHP  PHP  PHP -->
+  <h2 class="section">PHP</h2>
+
+
+  <!--PHP INTRO-->
+  <div id="php-intro">
+    <p class="headline">PHP Intro</p>
+    Boiler Plate Plus+ uses <a href="http://www.php.net">PHP</a> instead of HTML. Don't worry though, they are incredibly similar. In fact, PHP is HTML with the ability to do a few extra things. You can write a full HTML page with a .php extension and the page will still render. What PHP has a benefit over HTML in is the way it can include files and send variables around. That means no code duplication and much less code itself! All you need to know for this introduction is that any php needs to be encapsulated within php tags like this: 
+    <pre>
+    &lt;?php
+  
+      //php code goes here
+    
+    ?>
+    </pre>
+    <a class="top" href="#">TOP</a>
+  </div>
+
+
+  <!--PHP INCLUDES-->
+  <div id="php-includes">
+    <p class="headline">PHP Includes</p>
+    Lets imagine a horrible scenario. You've made a great website. It has 100 pages exactly because you're precise like that. You wrote the code in HTML because it's familiar. The client signed off on the links at the top of the page. There will be four of them that direct the user to the main parts of the site. Well...that same client just called and now they want a new link! This means you'll have to go back through 100 pages and update the nav. Or...if you used PHP, you just have to do it once and all 100 pages will pick up the changes instantly! How does this work? It's very simple actually, just include the header part in a single file and call that same file into every page!
+    <pre>
+    &lt;?php
+   
+     include_once('includes/header.php'); 	
+   
+     //or
+   	
+     include('includes/somemodule.html');
+   
+     ?>    
+    </pre>
+    There are two examples here. An <a href="http://www.php.net/manual/en/function.include-once.php">include once</a> and an <a href="http://php.net/manual/en/function.include.php">include</a>. This should be pretty straight forward. At any point in your html you can create the PHP tags and call in a whole section of HTML. This is commonly done for headers and footers of the page, since those stay the same globally. The main difference between include and include_once is that include will always bring in the file no matter how many times it appears on the page. include_once will only bring in the file once. If there is another call for it, it will be ignored. This helps against human error (like bringing in two headers!)
+    <a class="top" href="#">TOP</a>
+  </div>
+
+
+  <!--PHP VARIABLES-->
+  <div id="php-variables">
+    <p class="headline">PHP Variables</p>
+    PHP variables are very simple to understand. Checkout the following demo:
+    <pre>
+    
+      &lt;?php
+    
+        $variable = "value";
+      
+        $boolean = true;
+    
+      ?>
+    
+    </pre>
+    For the most part strings and <a href="http://en.wikipedia.org/wiki/Boolean_data_type">booleans</a> will be the only things used in this project. 
+    <a class="top" href="#">TOP</a>
+  </div>
+
+
+  <!--PHP PARAMETERS IN INCLUDED FILES-->
+  <div id="php-variables-includes">
+    <p class="headline">PHP Parameters in included files</p>
+    Now that you know how to create PHP variables and include files, you're ready to combine them! But why combine? Lets look at a scenario. You have a page that needs to include a div. That div has a background color of green on 5 pages, and red on 3 pages. 99% of the HTML is the same, it's just one class name that needs to be changed (red or green). This is an easy opportunity to be lazy and create two copies of that div with the red and green class. With PHP includes and variables, you don't have to do that. Just set the color you want for the particular page using the example below: (Keep in mind echo is PHP keyword which outputs anything (string, int, boolean, to the screen))
+  
+    <pre>
+    
+      &lt;?php
+    
+        <span class="green">$color = "green";</span>
+      
+        include('special-div.html');
+    
+      ?>
+    
+    </pre>
+  
+    In the example above, the color variable has been set to green, and then there is a call to include a file called special-div.html. So what needs to happen in the special-div.html? It's very simple:
+  
+    <pre>
+    
+      &lt;div id="special" class="<span class="green">&lt;?php echo $color; ?>"</span>>
+        &lt;!--Content-->
+      &lt;/div>
+    
+    </pre>
+  
+    The best thing to take away from this example is that even though these are two separate pages, they are eventually combined and therefore the PHP variables can been seen by both. 
+    <a class="top" href="#">TOP</a>
+  </div>
+	
+
+
+  <!--BEST PRACTICES BEST PRACTICES BEST PRACTICES BEST PRACTICES BEST PRACTICES BEST PRACTICES BEST PRACTICES-->
+  <h2 class="section">BEST PRACTICES</h2>
+
+  <!--HTML HTML HTML HTML HTML HTML HTML HTML HTML HTML HTML HTML HTML HTML -->
+  <h3>HTML</h3>
+
+  <!--HTML FORMATTING-->
+  <div id="html-formatting">
+    <p class="headline">HTML Formatting</p>
+    This section covers the HTML formatting commonly used front end projects. Although you have the flexibility to alter the pages any which way you'd like, this wouldn't be a true boiler plate if it didn't set you off in the right direction! Here's a rundown of the code with a visual to make some sense of what you're getting. 
+  
+    <img src="img/page-layout.png" style="display:block;" alt="Page Layout">
+    <a class="top" href="#">TOP</a>
+  </div>
+
+
+  <!--HTML BEST PRACTICES-->
+  <div id="html-best-practices">
+    <p class="headline">HTML Best Practices</p>
+    There are a few simple practices you should adopt to make your project easier down the line. These are pretty simple, but can get over looked. I tried my best to force these good practices with my structure of this boiler plate:
+    <table border="1" cellspacing="1" cellpadding="1">
+      <tr>
+        <th>Practice</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>Body ID</td>
+        <td>Every page should have a body ID unique to the respective page. This helps encapsulate your code from a CSS point of view allowing specific rule targeting for specific pages. This rule also applies to Javascript to help determine if a block of code should be run based on conditionals. </td>
+      </tr>
+      <tr>
+        <td>ID/Class Names</td>
+        <td>Personally I admit to being incredibly lazy with defining good ID's and classnames. It's very easy to focus on the code you're writing and skip some of the semantics, but I can tell you from experience and general knowledge...take the time to come up with semantically great class names that can give someone completely unfamiliar with your project a clear understanding of what a specific block of code is supposed to do. In fact, a great tip is to layout the page on paper before you start coding and use ID's/classnames to help give you a better idea of what to expect for your page.<br /><br />Never give style-related names to classes or ID. As an example, calling a class <span class="red">'red-error'</span> for a block of text is never a good idea although it may seem like it at the time. What happens if the client comes back and says they want to change the color to black...or pink...or God forbid GREEN. Choose a name more generic like class="error-text"</td>
+      </tr>
+    </table>
+    <a class="top" href="#">TOP</a>
+  </div>
+
+  <!--CSS CSS CSS CSS CSS CSS CSS CSS CSS CSS CSS CSS CSS CSS -->
+  <h3>CSS</h3>
+
+  <!--CSS BEST PRACTICES-->
+  <div id="css-best-practices">
+    <p class="headline">CSS Best Practices</p>
+    This Boiler Plate comes with <a href="http://modernizr.com/">Modernizr</a>. This allows you to use HTML5 and CSS3. What's so special about that? Modernizr will adapt your code into non-supporting browsers and prevent them from breaking. Be sure to read up on the Documentation if you haven't used <a href="http://modernizr.com/docs/">Modernizr</a> before. <span class="incomplete">List out some examples of CSS selectors such as first-child, nth-child(n)????</span>
+    <a class="top" href="#">TOP</a>
+  </div>
+
+
+  <!--JS JS JS JS JS JS JS JS JS JS JS JS JS JS -->
+  <h3>Javascript</h3>
+
+  <!--JS BEST PRACTICES-->
+  <div id="js-best-practices">
+    <p class="headline">Javascript Best Practices</p>
+    One of the easiest places to be lazy while writing javascript is on the naming convention. Just like naming classes and ID's in HTML, it's easy to skip ahead and go right to the code without giving much thought to semantics. The idea "I'll come back to it later" is very tempting, but the truth of the matter is... "no you won't"...and if you do, you'll probably be rushing through at the end wishing you had taken the time to figure out the semantics earlier because even for you it's starting to become difficult to evaluate what function or variable is used for.
+    <a class="top" href="#">TOP</a>
+  </div>
+
+  <!--JS MODULE PATTERN-->
+  <div id="js-module-pattern">
+    <p class="headline">Javascript Module Pattern</p>
+    The Boiler Plate javascript uses what is called the <a href="http://www.codeproject.com/Articles/247241/Javascript-Module-Pattern">Module Pattern</a>. You don't have to be very familiar with this pattern to use it, especially since there is already a template set up. Just make sure you understand that your code goes inside of 'methods'. The reason this pattern is used is for modularization (as the name suggests). If one module (or page) breaks, you know exactly where it happened and what code is being affected by it. This is compared to writing all the javascript in one file, having to go through a ton of code that all relates to each other, and having to figure out how to change the structure. Sometimes making a fix in one place will break another. That brings up another topic, using the module pattern helps keep a <a href="http://jibbering.com/faq/notes/closures/">closure</a> around variables. This is helpful because global variables are bad in any language. 
+    <a class="top" href="#">TOP</a>
+  </div>
+
+
+  <!--JS NATIVE VS JQUERY-->
+  <div id="js-vs-jquery">
+    <p class="headline">Javascript or jQuery?</p>
+    It's very easy to get comfortable with jQuery. Heck it's incredibly quick and convenient. However, that convenience comes at a small price. Speed. Go ahead and google "jquery vs javascript speed" and you'll have a wealth of information. Here are a few links that talk about it:
+    <br /><br />
+    <ul>
+      <li><a href="http://net.tutsplus.com/tutorials/javascript-ajax/10-ways-to-instantly-increase-your-jquery-performance/">net.tutsplus</a></li>
+      <li><a href="http://stackoverflow.com/questions/4651923/when-to-use-vanilla-javascript-vs-jquery">stackoverflow</a></li>
+    </ul>
+    <a class="top" href="#">TOP</a>
+  </div>
+
+
+  <div id="quick-start">
+    <h2 class="section">Quick Start</h2>
+    Fuck documentation! It's a pain in the ass to write anyway, lets get started:
+    
+    <div class="terminal">
+      <pre>
+        $ perl -v
+      </pre>
+      You should get some response from Perl. If you don't, you need to <a href="http://www.perl.org/get.html">install</a> it! 
+      
+      <br /><br />
+      <strong style="color:red">NOTE!</strong> If you have not run CPAN, you will have to answer "yes" to a few setup questions.
+      <pre>
+        $ cpan
+        
+        cpan shell -- CPAN exploration and modules installation (v1.9456)        
+        Enter 'h' for help.
+
+        cpan[1]> <strong>install Config::Simple</strong>
+      </pre>
+      That's the only Perl add-on needed! Lets go to our project and run a build!
+      <pre>
+        $ cd /path/to/your/project
+        $ make test
+      </pre>
+      You should see a lot of generated lines. Check in your project directory. You should see a new file called <strong>ITWORKS.zip</strong>. You just zipped your project up! Be sure to make any changes in the config.ini file located in the config directory. Once you have a web server up and running along with a ssh enabled server, you can run a deploy.
+    </div>
+    <a class="top" href="#">TOP</a>
+  </div>
+</div>
+  
+  <script type="text/javascript" charset="utf-8">
+    $(document).ready(function(){
+      $("#quick-start-button").hover(function(){
+        $(this).css("background-image","url(img/shortversion-hover.jpg)");
+      },
+      function(){
+        $(this).css("background-image","url(img/shortversion.jpg)");
+      });
+    });
+  </script>
