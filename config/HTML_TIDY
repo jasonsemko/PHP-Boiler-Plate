@@ -3,11 +3,11 @@ show-errors: 0
 show-warnings: 0
 wrap:0
 indent:1
-indent-spaces:2
+indent-spaces:4
 sort-attributes:alpha
 tidy-mark:yes
 wrap-attributes:no
-tab-size:3
+tab-size:4
 anchor-as-name:no
 drop-empty-paras:no
 drop-empty-elements:no

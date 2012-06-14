@@ -4,32 +4,29 @@ use strict;
 use warnings;
 use Switch;
 
-[GLOBAL]
-perms = "755"
-assets = "img overlays"
-build_folder_name = "build2"
-web_address = "http://sigmachina.local/"
-tidy = true
+#Variables
+my $choice;
 
-[CSS]
-min_name = "global.min.css"
-order = "base global"
+my $global_permissions = "755";
+my $global_assets = "img overlays";
+my $global_build_folder = "build2";
+my $global_web_address = "http://sigmachina.local/";
+my $global_tidy = 1;
 
-[JS]
-min_name = "global.min.js"
+my $css_min_name = "global.min.css";
+my $css_order = "base global";
 
-[ZIP]
-name = "Project"
-append_timestamp = true
+my $js_min_name = "global.min.js";
 
-[SERVER]
-user = "jason"
-port = "1124"
-server = "50.56.114.19"
-dest = "/home/jason/build"
+my $zip_name = "Project";
+my $zip_append_timestamp = 1;
 
-switch($ARGV[0]){
-	
+my $server_user = "jason";
+my $server_port = "1124";
+my $server_server = "50.56.114.19";
+my $server_dest = "/home/jason/build";
+
+switch($ARGV[0]){	
 	case "zip" {zip();}
 	case "test"{ziptest();}
 	else{init();}
@@ -52,13 +49,13 @@ sub init {
 	
 		reset_permissions();
 		clear_old_build();
-		#transfer_php();
-		#transfer_css();
+		transfer_php();
+		transfer_css();
 		transfer_js();
-		#move_assets();
-		#zip();
+		move_assets();
+		zip();
 		#for testing no need to continually deploy to server, this works
-		#deploy();
+		deploy();
 	
 	} else {exit}
 }
@@ -67,7 +64,7 @@ sub init {
 #Reset permissions so Perl can execute on certain files (precautionary)
 sub reset_permissions {
 	proclaim("RESET PERMISSIONS");
-	system("chmod -R $Config->{'GLOBAL.perms'} ./");
+	system("chmod -R $global_permissions ./");
 }
 
 #Clear out our old build folder
@@ -75,11 +72,11 @@ sub clear_old_build {
 	
 	proclaim("CLEAR OUT BUILD FOLDER");
 	
-	system("rm -R ./$BUILD/* > /dev/null 2>&1");
+	system("rm -R ./$global_build_folder/* > /dev/null 2>&1");
 	
 	#If the build folder does not exist or the name changes, we need to create it!
 	if($? != 0) {
-		system("mkdir ./$BUILD/");
+		system("mkdir ./$global_build_folder/");
 	}
 	
 }
@@ -97,23 +94,23 @@ sub transfer_php {
 		$no_extension_URL = substr($_, 2, -4);
 		print "Downloading $full_URL \n";
 		
-		system("wget $Config->{'GLOBAL.web_address'}$full_URL -O./build/$no_extension_URL.html");
+		system("wget $global_web_address$full_URL -O./$global_build_folder/$no_extension_URL.html");
 		
 		#replace all .php links with .html
-		`sed -i ./$BUILD/$no_extension_URL.html 's/.php/.html/g' ./$BUILD/$no_extension_URL.html`;
+		`sed -i ./$global_build_folder/$no_extension_URL.html 's/.php/.html/g' ./$global_build_folder/$no_extension_URL.html`;
 		
 		#remove all css and deferred javascript tags (replace with global)
-		`sed -i ./$BUILD/$no_extension_URL.html '/<link/d' -e '/defer/d' ./$BUILD/$no_extension_URL.html`;
+		`sed -i ./$global_build_folder/$no_extension_URL.html '/<link/d' -e '/defer/d' ./$global_build_folder/$no_extension_URL.html`;
 		
 		#Insert global JS in appropriate place
-		`sed -i ./$BUILD/$no_extension_URL.html 's#<!--GLOBAL JS FILE GOES HERE (PRODUCTION)-->#<script defer src="js/$JS"></script>#g' ./$BUILD/$no_extension_URL.html`;
+		`sed -i ./$global_build_folder/$no_extension_URL.html 's#<!--GLOBAL JS FILE GOES HERE (PRODUCTION)-->#<script defer src="js/$js_min_name"></script>#g' ./$global_build_folder/$no_extension_URL.html`;
 		
 		#Insert global CSS in apprpriate place
-		`sed -i ./$BUILD/$no_extension_URL.html 's#<!--GLOBAL CSS FILE GOES HERE (PRODUCTION)-->#<link href="css/$CSS" rel="stylesheet">#g' ./$BUILD/$no_extension_URL.html`;
+		`sed -i ./$global_build_folder/$no_extension_URL.html 's#<!--GLOBAL CSS FILE GOES HERE (PRODUCTION)-->#<link href="css/$css_min_name" rel="stylesheet">#g' ./$global_build_folder/$no_extension_URL.html`;
 
 		#Tidy up HTML?
-		if($Config->{'GLOBAL.tidy'}) {
-			`tidy -m -config ./config/HTML_TIDY $BUILD/$no_extension_URL.html`;
+		if($global_tidy) {
+			`tidy -m -config ./config/HTML_TIDY $global_build_folder/$no_extension_URL.html`;
 		}
 	}
 }
@@ -124,14 +121,14 @@ sub transfer_css {
 	proclaim("BEGIN CSS MINIFICATION");
 	
 	#Make the css directory
-	system("mkdir ./$BUILD/css");
+	system("mkdir ./$global_build_folder/css");
 	
 	#put the starting css files (reset, base) into an array, go through and append to new global css file
 	#After that change extension to .bak so in next css sweep they are not re-added to global css file
-	my @css_beginners = split(/\s/, $Config->{"CSS.order"});
+	my @css_beginners = split(/\s/, $css_order);
 	foreach(@css_beginners) {
-		`echo "\n\n/****************$_*****************/\n\n" >> ./$BUILD/css/$CSS.tmp`;
-		system("cat ./css/$_.css >> ./$BUILD/css/$CSS.tmp");
+		`echo "\n\n/****************$_*****************/\n\n" >> ./$global_build_folder/css/$css_min_name.tmp`;
+		system("cat ./css/$_.css >> ./$global_build_folder/css/$css_min_name.tmp");
 		system("mv ./css/$_.css ./css/$_.bak");
 	}
 	system("mv ./css/plugins/colorbox.css ./css/plugins/colorbox.bak");
@@ -139,8 +136,8 @@ sub transfer_css {
 	#Previous css files are .bak now, left over css files can go in any order, add them to global alphabetically
 	my @css_files = split(/\s/, `find ./css -name "*.css"`);
 	foreach(@css_files) {
-		`echo "\n\n/****************$_*****************/\n\n" >> ./$BUILD/css/$CSS.tmp`;
-		system("cat $_ >> ./$BUILD/css/$CSS.tmp");
+		`echo "\n\n/****************$_*****************/\n\n" >> ./$global_build_folder/css/$css_min_name.tmp`;
+		system("cat $_ >> ./$global_build_folder/css/$css_min_name.tmp");
 	}
 	
 	#Now that all css has been added to global, return from .bak to .css
@@ -154,15 +151,15 @@ sub transfer_css {
 	#Yes we have csstidy, use it
 	if($? == 0) {
 		#proclaim("CSS TIDY ME UP");
-		#system("csstidy ./$BUILD/css/$CSS.tmp --preserve_css=true --remove_bslash=false ./$BUILD/css/$CSS.tmp");	
+		#system("csstidy ./$global_build_folder/css/$css_min_name.tmp --preserve_css=true --remove_bslash=false ./$global_build_folder/css/$css_min_name.tmp");	
 	}
 
 	#move colorbox.bak to colorbox.css and append it to global (need to find better way to do this, use folder)
 	system("mv ./css/plugins/colorbox.bak ./css/plugins/colorbox.css");
-	system("cat ./css/plugins/colorbox.css >> ./$BUILD/css/$CSS.tmp");
+	system("cat ./css/plugins/colorbox.css >> ./$global_build_folder/css/$css_min_name.tmp");
 	
 	#move global.tmp to global.css, done
-	system("mv ./$BUILD/css/$CSS.tmp ./$BUILD/css/$CSS");
+	system("mv ./$global_build_folder/css/$css_min_name.tmp ./$global_build_folder/css/$css_min_name");
 	
 	proclaim("END CSS MINIFICATION");
 }
@@ -170,19 +167,19 @@ sub transfer_css {
 sub transfer_js {
 	proclaim("BEGIN JS MINIFICATION");
 
-	system("mkdir ./$BUILD/js");
+	system("mkdir ./$global_build_folder/js");
 	
 	my @js_files = split(/\s/, `find ./js -name "*.js" -depth 1`);
 	
 	foreach(@js_files) {
 		print "merging $_ \n";
-		system("cat $_ >> ./$BUILD/$JS");
+		system("cat $_ >> ./$global_build_folder/js/$js_min_name.tmp");
 	}
 	
-	system("java -jar ./config/yui/build/yui.jar --type js --line-break 100 ./$BUILD/$JS > ./$BUILD/js/$JS");
+	system("java -jar ./config/yui/build/yui.jar --type js --line-break 100 ./$global_build_folder/js/$js_min_name.tmp > ./$global_build_folder/js/$js_min_name");
 	
 	#copy over all the js files in the plugins directory
-	system("cp -R ./js/plugins ./$BUILD/js/plugins");
+	system("cp -R ./js/plugins ./$global_build_folder/js/plugins");
 	
 	proclaim("END JS MINIFICATION");
 }
@@ -190,47 +187,27 @@ sub transfer_js {
 sub move_assets {
 	proclaim("MOVE OTHER ASSETS");
 	
-	my @assets = split(/\s/, $Config->{"GLOBAL.assets"});
+	my @assets = split(/\s/, $global_assets);
 	
 	foreach(@assets) {
-		system("cp -R ./$_ ./$BUILD");
+		system("cp -R ./$_ ./$global_build_folder");
 	}
 	
-	system("sed -i ./$BUILD/overlays/product.html 's/.php/.html/g' ./$BUILD/overlays/product.html");
+	system("sed -i ./$global_build_folder/overlays/product.html 's/.php/.html/g' ./$global_build_folder/overlays/product.html");
 	
 	system("chmod -R 755 ./");
 }
 
 sub zip {
 	proclaim("ZIP IT UP");
-	system("rm $Config->{'ZIP.name'}.zip");
-	system("zip -r $Config->{'ZIP.name'}.zip ./$BUILD");
+	system("rm $zip_name");
+	system("zip -r $zip_name ./$global_build_folder");
 }
 
 sub deploy {	
-	system("rsync -rv --progress -e 'ssh -p $Config->{'SERVER.port'}' ./$BUILD $Config->{'SERVER.user'}\@$Config->{'SERVER.server'}:$Config->{'SERVER.dest'}");
+	system("rsync -rv --progress -e 'ssh -p $server_port' ./$global_build_folder $server_user\@$server_server:$server_dest");
 }
 
 sub proclaim{
 	print "==========================$_[0]=============================\n";
 }
-
-
-#With use of config.ini file, currently considering removing this for one less dependency
-
-# #Perl Module that works with config.ini
-# use Config::Simple;
-# 
-# #global vars
-# my $choice;
-# 
-# #Create a global variable with all the configuration options
-# my %Config;
-# Config::Simple->import_from('config.ini', \%Config);
-# my $cfg = new Config::Simple('./config/config.ini');
-# my $Config = $cfg->vars();
-# 
-# #Globals used often throughout script
-# my $CSS = $Config->{'CSS.min_name'};
-# my $JS = $Config->{'JS.min_name'};
-# my $BUILD = $Config->{'GLOBAL.build_folder_name'};
