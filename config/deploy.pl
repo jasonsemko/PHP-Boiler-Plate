@@ -21,6 +21,7 @@ my $js_min_name = "global.min.js";
 my $zip_name = "Project";
 my $zip_append_timestamp = 1;
 
+my $deploy = 0; #Do you want to deploy? Default false
 my $server_user = "jason";
 my $server_port = "1124";
 my $server_server = "50.56.114.19";
@@ -97,16 +98,16 @@ sub transfer_php {
 		system("wget $global_web_address$full_URL -O./$global_build_folder/$no_extension_URL.html");
 		
 		#replace all .php links with .html
-		`sed -i ./$global_build_folder/$no_extension_URL.html 's/.php/.html/g' ./$global_build_folder/$no_extension_URL.html`;
+		`sed -e 's/.php/.html/g' -i .tmp ./$global_build_folder/$no_extension_URL.html`;
 		
 		#remove all css and deferred javascript tags (replace with global)
-		`sed -i ./$global_build_folder/$no_extension_URL.html '/<link/d' -e '/defer/d' ./$global_build_folder/$no_extension_URL.html`;
-		
+		`sed -e '/<link/d' -e '/defer/d' -i .tmp ./$global_build_folder/$no_extension_URL.html`;
+			
 		#Insert global JS in appropriate place
-		`sed -i ./$global_build_folder/$no_extension_URL.html 's#<!--GLOBAL JS FILE GOES HERE (PRODUCTION)-->#<script defer src="js/$js_min_name"></script>#g' ./$global_build_folder/$no_extension_URL.html`;
+		`sed -e 's#<!--GLOBAL JS FILE GOES HERE (PRODUCTION)-->#<script defer src="js/$js_min_name"></script>#g' -i .tmp ./$global_build_folder/$no_extension_URL.html`;
 		
 		#Insert global CSS in apprpriate place
-		`sed -i ./$global_build_folder/$no_extension_URL.html 's#<!--GLOBAL CSS FILE GOES HERE (PRODUCTION)-->#<link href="css/$css_min_name" rel="stylesheet">#g' ./$global_build_folder/$no_extension_URL.html`;
+		`sed -e 's#<!--GLOBAL CSS FILE GOES HERE (PRODUCTION)-->#<link href="css/$css_min_name" rel="stylesheet">#g' -i .tmp ./$global_build_folder/$no_extension_URL.html`;
 
 		#Tidy up HTML?
 		if($global_tidy) {
@@ -193,14 +194,14 @@ sub move_assets {
 		system("cp -R ./$_ ./$global_build_folder");
 	}
 	
-	system("sed -i ./$global_build_folder/overlays/product.html 's/.php/.html/g' ./$global_build_folder/overlays/product.html");
+	system("sed -e 's/.php/.html/g' -i .tmp ./$global_build_folder/overlays/product.html");
 	
 	system("chmod -R 755 ./");
 }
 
 sub zip {
 	proclaim("ZIP IT UP");
-	system("rm $zip_name");
+	system("rm $zip_name > /dev/null 2>&1");
 	system("zip -r $zip_name ./$global_build_folder");
 }
 
