@@ -6,7 +6,7 @@
   
   require_once('includes/header.php'); 		
   
-?>
+ ?>
 
     <div class="content-wrapper">
       
