@@ -10,7 +10,7 @@ my $choice;
 my $global_permissions = "755";
 my $global_assets = "img overlays";
 my $global_build_folder = "build2";
-my $global_web_address = "http://sigmachina.local/";
+my $global_web_address = "http://somesite.local";
 my $global_tidy = 1;
 
 my $css_min_name = "global.min.css";
@@ -45,6 +45,10 @@ sub init {
 	print "*********************************************************\n\n";
 
 	chomp($choice = <STDIN>);
+	
+	if($global_web_address == "http://somesite.local") {
+		exit
+	}
 
 	if($choice eq "C" || $choice eq "c") {
 	
