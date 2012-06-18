@@ -183,7 +183,7 @@ sub transfer_js {
 	}
 	
 	system("java -jar ./config/yui/build/yui.jar --type js --line-break 100 ./$global_build_folder/js/$js_min_name.tmp > ./$global_build_folder/js/$js_min_name");
-	
+	system("rm ./$global_build_folder/js/*.tmp");
 	#copy over all the js files in the plugins directory
 	system("cp -R ./js/plugins ./$global_build_folder/js/plugins");
 	
