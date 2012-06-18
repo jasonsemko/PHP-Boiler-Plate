@@ -10,7 +10,7 @@ my $choice;
 my $global_permissions = "755";
 my $global_assets = "img overlays";
 my $global_build_folder = "build2";
-my $global_web_address = "http://somesite.local";
+my $global_web_address = "http://sigmachina.local/";
 my $global_tidy = 1;
 
 my $css_min_name = "global.min.css";
@@ -46,10 +46,10 @@ sub init {
 
 	chomp($choice = <STDIN>);
 	
-	if($global_web_address	 == "http://somesite.local") {
-		print "Error: You need to specify your host, please setup your variables in ./config/deploy.pl";
-		exit
-	}
+	#if($global_web_address == "http://somesite.local") {
+	#	print "Error: You need to specify your host, please setup your variables in ./config/deploy.pl\n$global_web_address\n";
+	#	exit
+	#}
 
 	if($choice eq "C" || $choice eq "c") {
 	
@@ -103,20 +103,20 @@ sub transfer_php {
 		system("wget $global_web_address$full_URL -O./$global_build_folder/$no_extension_URL.html");
 		
 		#replace all .php links with .html
-		`sed -e 's/.php/.html/g' -i .tmp ./$global_build_folder/$no_extension_URL.html`;
+		`sed -e 's/.php/.html/g' -i "" ./$global_build_folder/$no_extension_URL.html`;
 		
 		#remove all css and deferred javascript tags (replace with global)
-		`sed -e '/<link/d' -e '/defer/d' -i .tmp ./$global_build_folder/$no_extension_URL.html`;
+		`sed -e '/<link/d' -e '/defer/d' -i "" ./$global_build_folder/$no_extension_URL.html`;
 			
 		#Insert global JS in appropriate place
-		`sed -e 's#<!--GLOBAL JS FILE GOES HERE (PRODUCTION)-->#<script defer src="js/$js_min_name"></script>#g' -i .tmp ./$global_build_folder/$no_extension_URL.html`;
+		`sed -e 's#<!--GLOBAL JS FILE GOES HERE (PRODUCTION)-->#<script defer src="js/$js_min_name"></script>#g' -i "" ./$global_build_folder/$no_extension_URL.html`;
 		
 		#Insert global CSS in apprpriate place
-		`sed -e 's#<!--GLOBAL CSS FILE GOES HERE (PRODUCTION)-->#<link href="css/$css_min_name" rel="stylesheet">#g' -i .tmp ./$global_build_folder/$no_extension_URL.html`;
+		`sed -e 's#<!--GLOBAL CSS FILE GOES HERE (PRODUCTION)-->#<link href="css/$css_min_name" rel="stylesheet">#g' -i "" ./$global_build_folder/$no_extension_URL.html`;
 
 		#Tidy up HTML?
 		if($global_tidy) {
-			`tidy -m -config ./config/HTML_TIDY $global_build_folder/$no_extension_URL.html`;
+		#	`tidy -m -config ./config/HTML_TIDY $global_build_folder/$no_extension_URL.html`;
 		}
 	}
 }
