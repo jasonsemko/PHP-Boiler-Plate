@@ -41,12 +41,13 @@ sub init {
 	
 	print "*********************************************************\n\n";
 	print "***********You are about to deploy to $ARGV[0]***********\n\n";
-	print "***********(C)ontinue         (E)xit**********************\n\n";
+	print "***********(C)ontinue         (E)xit*********************\n\n";
 	print "*********************************************************\n\n";
 
 	chomp($choice = <STDIN>);
 	
-	if($global_web_address == "http://somesite.local") {
+	if($global_web_address	 == "http://somesite.local") {
+		print "Error: You need to specify your host, please setup your variables in ./config/deploy.pl";
 		exit
 	}
 
@@ -60,7 +61,7 @@ sub init {
 		move_assets();
 		zip();
 		#for testing no need to continually deploy to server, this works
-		deploy();
+		if($deploy) { deploy();}
 	
 	} else {exit}
 }
