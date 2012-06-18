@@ -7,10 +7,11 @@
 		
 		<!-- HUGE Scripts -->
 		<script defer src="js/global.js"></script>
-		<script defer src="js/index.js"></script>
-		<script defer src="js/search-results.js"></script>
-		<script defer src="js/antibiotics.js"></script>
-		<!--GLOBAL JS FILE GOES HERE (PRODUCTION)-->
+		
+		<?php $JS_Files = split(" ", $JS_Files);	?>
+		<?php foreach($JS_Files as $js): 			?>
+			<script defer src="js/<?php echo $js; ?>"></script>
+		<?php endforeach; 							?>
 		
 		</div><!--[if IE]> #pageWrapper <![endif]-->
 	</body>

@@ -10,10 +10,16 @@ my $choice;
 my $full_stack = 0;											#full stack? This will combine and minify js/css
                                                       
 my $global_permissions = "755";								#standard permissions 							(755)
+my $global_assets = "img overlays css/plugins";             #any other assets should be added to this chain (img overlays)
 my $global_build_folder = "build";                          #name of the build folder 						(build)
 my $global_web_address = "http://sigmachina.local/";        #the web address root 							(http://somesite.local/)
 my $global_tidy = 0;                                        #1 = true for html tidy 						(0)
-
+                                                            
+my $css_min_name = "global.min.css";                        #name for minified/pretty global css file		(global.min.css)
+my $css_order = "base global";                              #which files should come first in the css?		(base global)
+                                                            
+my $js_min_name = "global.min.js";                          #javascript minified/pretty file name			(global.min.js)
+                                                            
 my $zip_name = "Project";                                   #name of zip file								(Project)
 my $zip_append_timestamp = 1;                               #append a time stamp?							(1)
                                                             
@@ -102,6 +108,20 @@ sub transfer_php {
 		
 		#replace all .php links with .html
 		`sed -e 's/.php/.html/g' -i "" ./$global_build_folder/$no_extension_URL.html`;
+		
+		#if we are full stack
+			#remove all css and deferred javascript tags (replace with global)
+			#`sed -e '/<link/d' -e '/defer/d' -i "" ./$global_build_folder/$no_extension_URL.html`;			
+			#Insert global JS in appropriate place
+			#`sed -e 's#<!--GLOBAL JS FILE GOES HERE (PRODUCTION)-->#<script defer src="js/$js_min_name"></script>#g' -i "" ./$global_build_folder/$no_extension_URL.html`;		
+			#Insert global CSS in apprpriate place
+			#`sed -e 's#<!--GLOBAL CSS FILE GOES HERE (PRODUCTION)-->#<link href="css/$css_min_name" rel="stylesheet">#g' -i "" ./$global_build_folder/$no_extension_URL.html`;
+		#else just move the js and css over
+			
+		#Tidy up HTML?
+		#if($global_tidy) {
+		#	`tidy -m -config ./config/HTML_TIDY $global_build_folder/$no_extension_URL.html`;
+		#}
 	}
 }
 
@@ -113,33 +133,65 @@ sub transfer_css {
 	#Make the css directory
 	system("mkdir ./$global_build_folder/css");
 	system("cp -R ./css ./$global_build_folder");
+	#put the starting css files (reset, base) into an array, go through and append to new global css file
+	#After that change extension to .bak so in next css sweep they are not re-added to global css file
+	#my @css_beginners = split(/\s/, $css_order);
+	#foreach(@css_beginners) {
+	#	`echo "\n\n/****************$_*****************/\n\n" >> ./$global_build_folder/css/$css_min_name`;
+	#	system("cat ./css/$_.css >> ./$global_build_folder/css/$css_min_name");
+	#	system("mv ./css/$_.css ./css/$_.bak");
+	#}
+	#system("mv ./css/plugins/colorbox.css ./css/plugins/colorbox.bak");
+	
+	#Previous css files are .bak now, left over css files can go in any order, add them to global alphabetically
+	my @css_files = split(/\s/, `find ./$global_build_folder/css -name "*.css"`);
+	foreach(@css_files) {
+		print("$_");
+		system("csstidy $_ --preserve_css=true --remove_bslash=false $_");
+	}
+	#foreach(@css_files) {
+	#	`echo "\n\n/****************$_*****************/\n\n" >> ./$global_build_folder/css/$css_min_name`;
+	#	system("cat $_ >> ./$global_build_folder/css/$css_min_name");
+	#}
+	
+	#Now that all css has been added to global, return from .bak to .css
+	#foreach(@css_beginners) {
+	#		system("mv ./css/$_.bak ./css/$_.css");
+	#}
 
 	#test out csstidy
 	system("csstidy > /dev/null 2>&1");
 	
 	#Yes we have csstidy, use it
 	if($? == 0) {
-		my @css_files = split(/\s/, `find ./$global_build_folder/css -name "*.css"`);
-		foreach(@css_files) {
-			system("csstidy $_ --preserve_css=true --remove_bslash=false $_");
-		}
+		#proclaim("CSS TIDY ME UP");
+		system("csstidy ./$global_build_folder/css/$css_min_name.tmp --preserve_css=true --remove_bslash=false ./$global_build_folder/css/$css_min_name.tmp");	
 	}
+
+	#move colorbox.bak to colorbox.css and append it to global (need to find better way to do this, use folder)
+	#system("mv ./css/plugins/colorbox.bak ./css/plugins/colorbox.css");
+	#system("cat ./css/plugins/colorbox.css >> ./$global_build_folder/css/$css_min_name");
 	
 	proclaim("END CSS MINIFICATION");
 }
 
 sub transfer_js {
-	
 	proclaim("BEGIN JS MINIFICATION");
 
 	system("mkdir ./$global_build_folder/js");
-	system("cp -R ./js ./$global_build_folder");
 	
-	my @js_files = split(/\s/, `find ./$global_build_folder/js -name "*.js"`);
+	my @js_files = split(/\s/, `find ./js -name "*.js" -depth 1`);
+	
 	foreach(@js_files) {
-		system("java -jar ./config/yui/build/yui.jar --type js --line-break 100 $_ > $_.tmp");	
-		system("mv $_.tmp $_");
-	}	
+		print "merging $_ \n";
+		system("cat $_ >> ./$global_build_folder/js/$js_min_name.tmp");
+	}
+	
+	system("java -jar ./config/yui/build/yui.jar --type js --line-break 100 ./$global_build_folder/js/$js_min_name.tmp > ./$global_build_folder/js/$js_min_name");
+	system("rm ./$global_build_folder/js/*.tmp");
+	#copy over all the js files in the plugins directory
+	system("cp -R ./js/plugins ./$global_build_folder/js/plugins");
+	
 	proclaim("END JS MINIFICATION");
 }
 
