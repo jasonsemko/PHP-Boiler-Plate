@@ -3,16 +3,17 @@
 use strict;
 use warnings;
 use Switch;
+use Date::Parse;
 
 #Variables
 my $choice;
 
 my $full_stack = 0;											#full stack? This will combine and minify js/css
+my $global_assets = 'img overlays';							#folders to copy over to build
                                                       
 my $global_permissions = "755";								#standard permissions 							(755)
 my $global_build_folder = "build";                          #name of the build folder 						(build)
 my $global_web_address = "http://sigmachina.local/";        #the web address root 							(http://somesite.local/)
-my $global_tidy = 0;                                        #1 = true for html tidy 						(0)
 
 my $zip_name = "Project";                                   #name of zip file								(Project)
 my $zip_append_timestamp = 1;                               #append a time stamp?							(1)
@@ -42,11 +43,10 @@ sub init {
 
 	chomp($choice = <STDIN>);
 	
-	# TODO This does not work for some reason.
-	#if($global_web_address == "http://somesite.local") {
-	#	print "Error: You need to specify your host, please setup your variables in ./config/deploy.pl\n$global_web_address\n";
-	#	exit
-	#}
+	if($global_web_address eq "http://somesite.local") {
+		print "Error: You need to specify your host, please setup your variables in ./config/deploy.pl\n$global_web_address\n";
+		exit
+	}
 
 	if($choice eq "C" || $choice eq "c") {
 	
@@ -156,9 +156,18 @@ sub move_assets {
 }
 
 sub zip {
+	my $timer = time();
+	$timer = localtime($timer);
+	$timer =~ s/ /_/g;
+
 	proclaim("ZIP IT UP");
-	system("rm $zip_name > /dev/null 2>&1");
-	system("zip -r $zip_name ./$global_build_folder");
+	system("rm ./*.zip > /dev/null 2>&1");
+	
+	if($zip_append_timestamp) {
+		system("zip -r $zip_name$timer ./$global_build_folder");
+	} else {
+		system("zip -r $zip_name ./$global_build_folder");
+	}
 }
 
 sub deploy {	
